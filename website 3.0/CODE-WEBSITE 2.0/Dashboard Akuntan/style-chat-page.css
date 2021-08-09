@@ -1,0 +1,331 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	background: #F0F0F0;
+	font-family: Helvetica Neue;
+	height: 100%;
+}
+@media only screen and (min-width: 900px){
+	.back-button {
+		font-size: 25px;
+		padding: 5px 0px;
+		position: absolute;
+		top: 5%;
+		margin-left: 15%;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	main{
+		display: block;
+		top: 10%;
+		width: 70%;
+		height: 50%;
+		margin-left: 15%;
+		margin-right: 15%;
+		background: white;
+		overflow: scroll;
+		white-space: wrap;
+		z-index: -10;
+	}
+	.logo img{
+		width: 10%;
+		margin-left: 45%;
+		margin-right: 45%;
+		margin-top: 2.5%;
+		margin-bottom: 2.5%;
+	}
+	.header-chat{
+		border-radius: 10px 10px 0 0;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+		height: 90px;
+		background: #68EAD4;
+		z-index: 10;
+	}
+	.profile-picture{
+		position: absolute;
+		margin-left: 40px;
+		margin-top: 10px;
+		overflow: hidden;
+		border-radius: 100%;
+		width: 70px;
+		height: 70px;
+		background: pink;
+	}
+	.profile-picture img{
+		width: 105%;
+	}
+	.profile-name-online{
+		position: absolute;
+		margin-left: 150px;
+		margin-top: 25px;
+	}
+	.profile-name-online p{
+		margin-top: 5px;
+	}
+	.chat-bubble{
+		position: relative;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 150px;
+		z-index: 1;
+	}
+	.sender p{
+		display: block;
+
+	}
+	.sender .isi-chat, .receiver .isi-chat{
+		font-size: 16px;
+		padding-top: 10px;
+		margin-bottom: 5px;
+		max-width: 200px;
+		line-height: 20px;
+	}
+	.sender .waktu-chat, .receiver .waktu-chat{
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+	.sender .waktu-chat{
+		text-align: right;
+	}
+	.sender .isi-chat{
+		text-align: left;
+	}
+	.receiver .waktu-chat{
+		text-align: right;
+	}
+	.receiver .isi-chat{
+		text-align: left;
+	}
+	li.sender{
+		display: block;
+		width: 30%;
+		height: auto;
+		background: #F0F0F0;
+		border-radius: 10px;
+		padding-left: 2%;
+		padding-right: 2%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		z-index: 2;
+	}
+
+	li.receiver{
+		margin-left: 66%;
+		display: block;
+		width: 30%;
+		height: auto;
+		background: #68EAD4;
+		border-radius: 10px;
+		padding-left: 2%;
+		padding-right: 2%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		z-index: 2;
+	}
+	li.sender{
+
+	}
+	.chat-box{
+		padding-top: 2.5%;
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+		background: white;
+		z-index: 100;
+		padding-bottom: 2.5%;
+		margin-bottom: 100px;
+	}
+	#box{
+		margin-left: 10%;
+		border: 1px solid #68EAD4;
+		width: 60%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		height: 30px;
+		border-radius: 5px;
+	}
+	.button{
+		border: 2px solid #68EAD4;
+		display: inline-block;
+		width: 15%;
+		height: 30px !important;
+		background: #68EAD4;
+		font-size: 17px;
+		border-radius: 5px;
+
+	}
+}
+@media only screen and (max-width: 900px){
+	.back-button {
+		font-size: 25px;
+		padding: 5px 0px;
+		position: absolute;
+		top: 3%;
+		margin-left: 5%;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+	main{
+		display: block;
+		top: 1% !important;
+		width: 90%;
+		height: 65% !important;
+		margin-left: 5%;
+		margin-right: 5%;
+		background: white;
+		overflow: scroll;
+		white-space: wrap;
+		z-index: -10;
+	}
+	.logo img{
+		width: 40%;
+		margin-left: 30%;
+		margin-right: 30%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	.header-chat{
+		border-radius: 10px 10px 0 0;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		height: 80px;
+		background: #68EAD4;
+		z-index: 10;
+	}
+	.profile-picture{
+		position: absolute;
+		margin-left: 20px;
+		margin-top: 15px;
+		overflow: hidden;
+		border-radius: 100%;
+		width: 50px;
+		height: 50px;
+		background: pink;
+	}
+	.profile-picture img{
+		width: 105%;
+	}
+	.profile-name-online{
+		position: absolute;
+		margin-left: 80px;
+		margin-top: 15px;
+	}
+	h2{
+		font-size: 18px;
+	}
+	.profile-name-online p{
+		margin-top: 5px;
+		font-size: 14px;
+	}
+	.chat-bubble{
+		position: relative;
+		width: 95%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 150px;
+		z-index: 1;
+	}
+	.sender p{
+		display: block;
+
+	}
+	.sender .isi-chat, .receiver .isi-chat{
+		font-size: 16px;
+		padding-top: 10px;
+		margin-bottom: 5px;
+		max-width: 200px;
+		line-height: 20px;
+	}
+	.sender .waktu-chat, .receiver .waktu-chat{
+		font-size: 12px;
+		padding-bottom: 10px;
+	}
+	.sender .waktu-chat{
+		text-align: right;
+	}
+	.sender .isi-chat{
+		text-align: left;
+	}
+	.receiver .waktu-chat{
+		text-align: right;
+	}
+	.receiver .isi-chat{
+		text-align: left;
+	}
+	li.sender{
+		display: block;
+		width: 70%;
+		height: auto;
+		background: #F0F0F0;
+		border-radius: 10px;
+		padding-left: 2%;
+		padding-right: 2%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		z-index: 2;
+		margin-bottom: 20px;
+	}
+
+	li.receiver{
+		margin-left: 26%;
+		display: block;
+		width: 70%;
+		height: auto;
+		background: #68EAD4;
+		border-radius: 10px;
+		padding-left: 2%;
+		padding-right: 2%;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+		z-index: 2;
+		margin-bottom: 20px;
+	}
+	li.sender{
+
+	}
+	.chat-box{
+		padding-top: 5%;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		background: white;
+		z-index: 100;
+		padding-bottom: 5%;
+		margin-bottom: 100px;
+	}
+	#box{
+		margin-left: 10%;
+		border: 1px solid #68EAD4;
+		width: 60%;
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		height: 30px;
+		border-radius: 5px;
+	}
+	.button{
+		border: 2px solid #68EAD4;
+		display: inline-block;
+		width: 15%;
+		height: 30px !important;
+		background: #68EAD4;
+		font-size: 17px;
+		border-radius: 5px;
+
+	}
+}
+

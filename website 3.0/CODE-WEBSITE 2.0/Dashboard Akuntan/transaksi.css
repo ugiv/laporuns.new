@@ -1,0 +1,153 @@
+
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	font-family: Helvetica Neue;
+	background: #F0F0F0;
+}
+@media only screen and (min-width: 900px){
+	.logo img{
+		width: 10%;
+		position: absolute;
+		left: 45%;
+		top: 2.5%;
+	}
+	.nama-data h1{
+		font-size: 20px;
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+	main h3{
+		text-align: center;
+		font-weight: normal;
+		font-size: 20px;
+		margin-top: 100px;
+	}
+	main {
+		position: absolute;
+		width: 80%;
+		height: auto;
+		left: 10%;
+		top: 10%;
+		background: white;
+		border-radius: 20px;
+		padding-bottom: 100px;
+		margin-bottom: 100px;
+	}
+	.list-data{
+		margin-top: 100px;
+	}
+	.list-data li{
+		display: inline-block;
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		margin-bottom: 5px;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	}
+	.list-data p{
+		padding-top: 25px;
+		padding-bottom: 25px;
+		text-decoration: none;
+	}
+	.list-data p:hover{
+		color: #68EAD4;
+	}
+	.list-data a{
+		text-decoration: none;
+		color: black;
+	}
+	.back-button {
+		font-size: 25px;
+		padding: 5px 10px;
+		border-radius: 100%;
+		position: absolute;
+		top: 2.5%;
+		left: 10%;
+		cursor: pointer;
+	}
+	.back-button:hover{
+		background: white;
+	}
+
+}
+@media only screen and (max-width: 900px){
+	.back-button {
+		font-size: 25px;
+		padding: 5px 0px;
+		border-radius: 5px;
+		position: absolute;
+		top: 80px;
+		margin-left: 5%;
+		cursor: pointer;
+	}
+	.logo img{
+		width: 40%;
+		margin-right: 30%;
+		margin-left: 30%;
+		margin-top: 80px;
+		margin-bottom: 50px;
+	}
+	.nama-data h1{
+		font-size: 20px;
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+	main h3{
+		text-align: center;
+		font-weight: normal;
+		font-size: 20px;
+		margin-top: 100px;
+	}
+	main {
+		position: absolute;
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-right: 5%;
+		background: white;
+		border-radius: 20px;
+		padding-bottom: 100px;
+		margin-bottom: 100px;
+	}
+	.list-data{
+		margin-top: 100px;
+	}
+	.list-data li{
+		display: inline-block;
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		margin-bottom: 5px;
+		border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+	}
+	.list-data p{
+		padding-top: 25px;
+		padding-bottom: 25px;
+		text-decoration: none;
+	}
+	.list-data p:hover{
+		color: #68EAD4;
+	}
+	.list-data a{
+		text-decoration: none;
+		color: black;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

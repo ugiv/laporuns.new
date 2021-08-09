@@ -1,0 +1,1043 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html{
+	width: 100%;
+	height: 100%;
+}
+.container{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+/*-- bagian loader --*/
+#preload{
+	width: 100%;
+	height: 100%;
+	background: white url(loader.gif) no-repeat center center;
+	z-index: 2000;
+	position: fixed;
+
+}
+/*-- bagian header navigation --*/
+header{
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+	background: #68EAD4;
+	position: fixed;
+	z-index: 11;
+	transition: 0.6s;
+}
+header.sticky{
+	background: white;
+	color: black;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+header.sticky a{
+	color: black;
+}
+header.sticky h3{
+	color: #68EAD4;
+}
+header.sticky li.sign-in a{
+	background: #68EAD4;
+	color: white;
+}
+header.sticky i.slide-toggle-open{
+	color: #68EAD4;
+}
+.logo{
+	float: left;
+	margin-top: 18px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 35px;
+
+}
+.menu{
+	float: right;
+	margin-top: 27px;
+}
+.menu li{
+	display: inline-block;
+	margin-left: 50px;
+}
+.menu a{
+	font-size: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+}
+.menu a:hover {
+	color: black;
+}
+.sign-in a{
+	margin-left: 40px;
+	padding: 10px 20px;
+	background: white;
+	color: black;
+	border-radius: 10px;
+}
+li.active a{
+	font-weight: bold;
+}
+.sign-in a:hover{
+	background: black;
+	color: white;
+}
+.slide-nav{
+	display: none;
+	overflow: scroll;
+}
+.slide-toggle{
+	display: none;
+}
+i.slide-toggle-open{
+	display: none;
+}
+/*-- bagian jumbotron --*/
+.jumbotron{
+	width: 100%;
+	height: 600px;
+}
+.background img{
+	width: 100%;
+	position: absolute;
+	z-index: -2;
+	margin-top: -90px;
+}
+img.mobile{
+	display: none;
+}
+.background{
+	width: 100%;
+	height: 800px;
+	overflow: hidden;
+	position: absolute;
+}
+.text h1{
+	text-align: center;
+	padding-top: 180px;
+	font-size: 60px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	width: 700px;
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.text{
+	text-align: center;
+	display: block;
+}
+a.mulai{
+	padding: 12.5px 40px;
+	background: white;
+	text-decoration: none;
+	border-radius: 10px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	font-size: 18px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	border: 2px solid black;
+}
+.animasi{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.animasi img{
+	width: 1200px;
+	transform: rotate();
+	float: left;
+	opacity: 0.95;
+}
+/*-- bagian pricing table --*/
+.pricing-table{
+	width: 100%;
+	height: 600px;
+	margin-top: 50px;
+}
+.tittle-price{
+	margin-top: -100px;
+	width: 100%;
+	height: 5vw;
+	color: #262930;
+	font-family: Helvetica Neue;
+
+}
+.tittle-price h2{
+	font-family: 'Roboto', sans-serif;
+}
+.header{
+	width: 100%;
+	height: 120px;
+}
+.header h2{
+	margin-bottom: 10px;
+	margin-top: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #262930;
+}
+.header p{
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: Helvetica Neue;
+}
+.columns{
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	text-align: center;
+	width: 20%;
+	height: 550px;
+	background: white;
+	display: inline-block;
+	float: left;
+	border-radius: 20px;
+	margin-top: 40px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.columns:hover{
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+	transform: scale(1.1);
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+span.ceklis{
+	margin-right: 10px;
+}
+.fitur {
+	width: 100%;
+	height: 250px;
+	margin-top: 30px;
+}
+.fitur p{
+	margin-top: 10px;
+	text-align: left;
+	margin-left: 30px;
+	font-family: Helvetica Neue;
+}
+.kiri{
+	margin-left: 15%;
+	background: white;
+}
+.kanan{
+	margin-right: 15%;
+	background: white;
+}
+.tengah{
+	margin-right: 5%;
+	margin-left: 5%;
+	background: white;
+}
+.ceklis {
+	color: #68EAD4;
+}
+a.button{
+	padding: 10px 30px;
+	font-size: 18px;
+	text-decoration: none;
+	color: white;
+	background: #68EAD4;
+	border-radius: 10px;
+	font-weight: bold;
+
+	font-family: Helvetica Neue;
+}
+.grey p, .grey h2{
+	font-family: Helvetica Neue;
+}
+.header p{
+	width: 95%;
+	margin-left: 2.5%;
+}
+.grey h2{
+	font-size: 26px
+}
+.grey p{
+	font-size: 12px;
+}
+.grey span{
+	font-size: 16px;
+}
+/*-- bagian penjelasan proses --*/
+.icon{
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+}
+li i{
+	font-size: 30px;
+	padding: 35px;
+	border-radius: 100%;
+	display: block;
+	position: relative;
+}
+.upl i{
+	color: #9d00ff;
+	background: #f5e9ff;
+}
+.pro i{
+	color: #00ddff;
+	background: #e2fdff;
+}
+.sel i{
+	color: #ff4400;
+	background: #ffeee5;
+	padding: 35px 40px;
+}
+.proses{
+	width: 100%;
+	height: 400px;
+	margin-top: 500px;
+}
+.proses-tittle {
+	width: 50px;
+	float: left;
+	font-size: 50px;
+	display: block;
+	padding-top: 125px;
+	padding-left: 125px;
+}
+.proses img{
+	position: absolute;
+	width: 500px;
+	margin-top: -200px;
+}
+.proses ul{
+	float: right;
+}
+.upl h2{
+	color: orange;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.pro h2{
+	color: skyblue;
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sel h2{
+	text-align: center;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.sel{
+	margin-right: 25px;
+}
+.pro{
+	margin-left: 25px;
+	margin-right: 25px;
+}
+.proses li{
+	width: 300px;
+	height: 300px;
+	display: inline-block;
+	background: white;
+	border-radius: 10px;
+	margin-top: 50px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.proses p{
+	font-family: 'Lato', sans-serif;
+	width: 260px;
+	text-align: center;
+	margin-left: 20px;
+	position: absolute;
+	font-size: 14px;
+}
+.proses p{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.proses h2{
+	color: #262930;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-family: 'Roboto', sans-serif; 
+}
+/*-- Banner --*/
+.banner{
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.banner li{
+	border-radius: 10px;
+	width: 49%;
+	height: 150px;
+	display: inline-block;
+	overflow: hidden;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+span{
+	margin-right: 2%;
+
+}
+.banner img{
+	width: 100%;
+}
+/*-- bagian ilustrasi perubahan pencatatan --*/
+.perubahan-laporan-keuangan{
+	position: relative;
+	width: 100%;
+	height: 1000px;
+	overflow: hidden;
+}
+.text-perubahan{
+	font-size: 2vw;
+	position: absolute;
+	text-align: center;
+	height: auto;
+	text-transform: uppercase;
+	font-family: Helvetica Neue;
+	line-height: 4vw;
+	width: 30%;
+	margin-left: 35%;
+	padding-top: 400px;
+	z-index: 10;
+}
+.text-perubahan h2{
+	width: 30%;
+	margin-left: 35%;
+	margin-right: 35%;
+}
+.perubahan-laporan-keuangan img{
+	width: 30%;
+	border-radius: 15px;
+	display: block;
+}
+img.formal{
+	position: absolute;
+	right: -5vw;
+	margin-top: 23vw;
+	box-shadow: 0px 0px 10px #00deff;
+}
+.shape-left{
+	left: -35vw;
+	margin-top: 5vw;
+	position: absolute;
+	width: 55vw;
+	height: 50vw;
+	border-radius: 20px;
+	background: linear-gradient(200deg ,#ffeee5, #ff4400);
+	transform: rotate(45deg);
+	display: none;
+}
+.shape-right{	
+	right: -30vw;
+	margin-top: 20vw;
+	position: absolute;
+	width: 55vw;
+	height: 45vw;
+	border-radius: 20px;
+	background: linear-gradient(30deg ,#e2fdff, #00deff);
+	transform: rotate(45deg);
+	display: none;
+
+}
+img.sederhana{
+	position: absolute;
+	left: -5vw;
+	margin-top: 10vw;
+	box-shadow: 0 0px 10px #ff4400;
+}
+/*-- bagian product --*/
+.tittle-product h2{
+	text-align: center;
+	font-family: 'Roboto', sans-serif; 
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.tittle-product p{
+	font-family: Helvetica Neue;
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.product{
+	width: 90%;
+	height: auto;
+	padding-bottom: 100px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+span.shape-product{
+	width: 20%;
+	height: 40px;
+	margin-left: 40%;
+	border-radius: 100% 100% 0 0 ;
+	background: #ff775e;
+	z-index: 10;
+	position: absolute;
+	bottom: 0;
+	box-shadow: 0 5 2px rgba(0, 0, 0, 0.1);
+}
+span.garis-putus{
+	width: 99%;
+	position: absolute;
+	z-index: 10;
+	bottom: 60px;
+	border-spacing: 1px;
+	border-style: dashed;
+	border-color: #ff775e;
+	border-width: 2px;
+}
+.product li{
+	margin-top: 50px;
+	background: white;
+	border: 2px solid #ff775e;
+	width: 20%;
+	margin-left: 4%;
+	height: 400px;
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 10px;
+	transition: 0.7s;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.product li p{
+	position: absolute;
+	width: 80%;
+	margin-left: 10%;
+	padding-top: 10px;
+	font-family: Helvetica Neue;
+	text-align: left;
+	font-size: 14px;
+	line-height: 20px;
+}
+.product li h3{
+	text-align: center;
+	width: 90%;
+	margin-left: 5%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Roboto', sans-serif; 
+	font-size: 25px;
+	color: #ff775e;
+}
+.product li:hover{
+	transform: scale(1.1);
+	transition: 0.7s;
+}
+.product h1{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+.statement-dummy{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.statement-dummy li img{
+	width: 25%;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 6%;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pilihan{
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+}
+.pilihan li{
+	display: inline-block;
+	background: white;
+	width: 42.5%;
+	height: 300px;
+	margin-left: 5%;
+	border: 3px solid black;
+	border-width: 2px;
+	border-radius: 20px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+span.garis-putus-kiri{
+	float: left;
+	height: 99.9%;
+	width: 100px;
+	border-radius: 18px 0 0 18px;
+	border-right: dashed;
+	border-color: black;
+	border-width: 2px;
+}
+span.garis-putus-kanan{
+	float: right;
+	right: 0;
+	height: 99.9%;
+	width: 100px;
+	border-radius: 0 18px 18px 0;
+	border-left: dashed;
+	border-color: black;
+	border-width: 2px;
+	margin-right: 0;
+}
+.pilihan p{ 
+	width: auto;
+	height: 100%;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+}
+.garis-putus-kiri p{
+	writing-mode: vertical-lr;
+	color: #68EAD4;
+}
+.garis-putus-kanan p{
+	writing-mode: vertical-rl;
+	color: #68EAD4;
+}
+h2.kanan{
+
+}
+.pilihan span:hover{
+	background: rgba(0, 0, 0, 0.1);
+	transition: 0.8s;
+}
+.tombol-kanan{
+	margin-left: 20px;
+}
+.tombol-kiri{
+	margin-left: 25px;
+}
+.pilihan h2{
+	position: absolute;
+	height: auto;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+}
+h2.h2-kanan{
+	margin-top: 100px;
+	font-size: 35px;
+	width: 20%;
+	margin-left: 5%;
+	text-align: left;
+}
+h2.h2-kiri{
+	margin-top: 100px;
+	font-size: 35px;
+	width: 20%;
+	margin-left: 17.5%;
+	text-align: right;
+}
+/*-- bagian footer --*/
+.footer{
+	padding-top: 100px;
+	padding-bottom: 50px;
+	font-size: 18px;
+	text-align:center;
+	width: 100%;
+	font-family: Helvetica Neue;
+	font-size: 18px;
+}
+.footer span{
+	line-height: 20px;
+}
+@media only screen and (max-width: 1400px){
+	.proses-tittle{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		text-align: center;
+		padding-left: 0;
+		float: none;
+		padding-bottom: 20px;
+		padding-top: 20px;
+	}
+	.proses {
+		width: 100%;
+	}
+	.proses ul{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		float: none;
+		padding-bottom: 20px;
+	}
+	.proses li{
+		width: 30%;
+		height: 300px;
+		display: inline-block;
+		background: white;
+		border-radius: 10px;
+		margin-top: 20px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		position: relative;
+	}
+	.upl{
+		
+	}
+	.pro{
+		margin-right: 4.5%;
+		margin-left: 4.5%;
+	}
+	.sel{
+		margin-right: 0;
+	}
+	.proses p{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.menu li{
+		display: none;
+	}
+	i.slide-toggle-open{
+		float: right;
+		display: block;
+		font-size: 40px;
+		color: white;
+		margin-right: 0;
+		padding: 0;
+		margin-top: 22.5px;
+	}
+	i.slide-toggle-close{
+		float: right;
+		font-size: 40px;
+		padding: 0;
+		margin-right: 5%;
+	}
+	.slide-nav{
+		width: 70%;
+		height: 100%;
+		background: white;
+		z-index: 12;
+		position: fixed;
+		display: block;
+		transition: 0.6s;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	}
+	.menu-slide li{
+		width: 80%;
+		padding-left: 10%;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		margin-left: 5%;
+		margin-right: 5%;
+		display: inline-block;
+		margin-bottom: 30px;
+		text-align: left;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+	}
+	.menu-slide a{
+		text-decoration: none;
+		color: black;
+		font-family: Helvetica Neue;
+	}
+	li.sign-in-2{
+		border: none;
+		text-align: center;
+		padding-left: 0;
+		margin-top: 100px;
+		padding: 15px 25px;
+		background: #68EAD4;
+		width: 50%;
+		margin-left: 20%;
+		margin-right: 25%;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-radius: 10px;
+	}
+	.sign-in-2 a{
+		color: white;
+	}
+	.logo-slide{
+		margin-top: 70px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 35px;
+		color: #68EAD4;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 100px;
+	}
+
+	.columns{
+		width: 30%;
+	}
+	.kiri{
+		margin-left: 2.5%;
+	}
+	.kanan{
+		margin-right: 2.5%;
+	}
+	.tengah{
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+	}
+	#price{
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+	}
+	.pricing-table{
+		width: 100%;
+		position: relative;
+		display: inline-block;
+	}
+	.tittle-price{
+		margin-top: 1200px;
+	}
+	img.desktop{
+		display: none;
+	}
+	img.mobile{
+		display: block !important;
+	}
+
+	.background img{
+		width: 100%;
+		height: auto;
+	}
+	.animasi img{
+		width: 130%;
+		margin-left: -100px;
+	}
+	.text h1{
+		width: 80%;
+	}
+}
+@media only screen and (max-width: 700px){
+	.perubahan-laporan-keuangan{
+		height: 600px;
+		margin-bottom: 0;
+	}
+	h2{
+		margin-top: 0;
+	}
+	.banner{
+		width: 90%;
+		position: relative;
+		display: block;
+		margin-left: 5%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.banner li{
+		width: 100%;
+		display: block;
+		height: 80px;
+		margin-bottom: 10px;
+	}
+	#price{
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+	}
+	.footer{
+		display: block;
+		width: 100%;
+	}
+	.pricing-table{
+		width: 800px;
+		position: relative;
+		display: inline-block;
+	}
+	.tittle-price{
+		margin-top: 12px;
+	}
+	.columns{
+		width: 230px;
+	}
+	.kiri{
+		margin-left: 20px;
+	}
+	.kanan{
+		margin-right: 20px;
+	}
+	.tengah{
+		margin-right: 20px;
+		margin-left: 20px;
+	}
+	.jumbotron{
+		width: 100%;
+		height: 700px;
+	}
+	.background{
+		padding-bottom: 100px;
+	}
+	.background img{
+		margin-top: -300px;
+		width: 700px;
+		height: auto;
+		border-radius: 0 0 0 300px;
+	}
+	.text h1{
+		font-size: 40px;
+		width: 100%;
+		padding-top: 120px;
+		padding-bottom: 50px;
+		line-height: 50px;
+		text-align: center;
+	}
+	a.mulai{
+		padding: 10px 35px;
+		font-size: 12px;
+		border-radius: 5px;
+		background: #68EAD4;
+		border: 2px solid white;
+		color: black;
+	}
+	.animasi img{
+		width: 135%;
+		margin-top: 50px;
+		margin-left: -18%;
+	}
+	.logo {
+		margin-top: 15px;
+		font-size: 20px;
+	}
+	header{
+		height: 55px;
+	}
+	i.slide-toggle-open{
+		font-size: 25px;
+		margin-top: 18px;
+
+	}
+	img.mobile{
+		display: block;
+	}
+	img.desktop{
+		display: none;
+	}
+	.proses{
+		margin-bottom: 10px;
+		height: auto;
+		margin-top: 10px;
+	}
+	.proses p{
+		width: 80%;
+		margin-left: 10%;
+	}
+	.proses li{
+		width: 90%;
+		height: 310px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	h2.proses-tittle {
+		text-align: center;
+		font-size: 40px;
+		width: 60%;
+		margin-left: 20%;
+		padding-top: 0;
+		padding-left: 0;
+		float: none;
+	}
+	.shape-left{
+		margin-top: 50px;
+		width: 250px;
+		height: 250px;
+	}
+	.shape-right{
+		width: 250px;
+		height: 250px;
+		margin-top: 250px;
+	}
+	img.sederhana{
+		width: 40%;
+		margin-top: 50px;
+	}
+	img.formal {
+		width: 40%;
+		margin-top: 250px;
+		border-radius: 10px;
+	}
+	h2.text-perubahan {
+		margin-top: 250px;
+		padding-top: 0px;
+		width: 50%;
+		margin-left: 25%;
+		font-size: 14px;
+		transform: rotate(-45deg);
+	}
+	.header p{
+		width: 95%;
+		margin-left: 2.5%;
+	}
+	.grey h2{
+		font-size: 26px
+	}
+	.grey p{
+		font-size: 12px;
+	}
+	.grey span{
+		font-size: 16px;
+	}
+	.tittle-price h2{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.tittle-price p{
+		font-size: 14px;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+		line-height: 20px;
+	}
+	.footer p{
+		font-size: 14px;
+	}
+	.menu-slide a{
+		font-size: 12px;
+	}
+	.menu-slide li{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin-bottom: 0;
+	}
+
+	li.sign-in-2{
+		width: 20%;
+		margin-left: 30%;
+	}
+	i.slide-toggle-close{
+		font-size: 22px;
+		margin-top: 22px;
+	}
+	.wrap-product{
+		overflow: scroll;
+	}
+	.tittle-product{
+
+	}
+	.product {
+		width: 800px;
+		margin-left: 0;
+	}
+	.product li{
+		height: 400px;
+		margin-left: 2.5%;
+	}
+	.product li p{
+		font-size: 12px;
+	}
+	.product li h3{
+		font-size: 18px;
+	}
+	span.shape-product{
+		height: 15px;
+	}
+}
+
+

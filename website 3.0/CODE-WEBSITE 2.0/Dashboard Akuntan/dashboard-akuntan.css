@@ -1,0 +1,604 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body, html{
+	height: 100%;
+	background-color: #F0F0F0;
+}
+input{
+	border-radius: 10px;
+	border: 1px solid #5BF1C7;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 40px;
+	width: 300px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+form{
+	position: relative;
+	padding-top: ;
+	display: block;
+	width: 830px;
+	margin: 0 auto;
+}
+main{
+	width: 100%;
+	padding-bottom: 100px;
+	font-family: Helvetica Neue;
+	z-index: 1;
+}
+
+.tittle-list{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	padding-top: 150px;
+	font-size: 18px;
+}
+#submit{
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	background: #5BF1C7;
+	border-radius: 10px;
+	border: none;
+	font-weight: bold;
+}
+section{
+	display: inline-block;
+	margin: 0 auto;
+}
+
+
+
+
+/*-- ukuran layar untuk 400px - 900px --*/
+
+@media only screen and (max-width: 900px){
+
+	nav li a{
+		display: none;
+	}
+	nav li{
+		padding-left: 200px;
+	}
+	.logo img{
+		width: 80%;
+	}
+	.name{
+		display: none;
+	}
+	nav{
+		display: none;
+	}
+	.header-dashboard{
+		width: 100%;
+		height: 300px;
+		margin-top: 50px;
+	}
+	.summary-side {
+		width: 100%;
+	}
+	.chart{
+		width: 90%;
+		height: auto;
+		margin-left: 5%;
+		margin-right: 5%; 
+	}
+	.box-1, .box-2, .box-3{
+		width: 30%;
+	}
+	.box-2{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.box-value{
+		height: 100px;
+	}
+
+}
+/*-- ukuran layar untuk 900px keatas --*/
+
+@media only screen and (min-width: 900px){
+	.header-dashboard{
+		width: 80%;
+		height: 80px;
+	}
+	.nav-device{
+		display: none;
+	}
+	.slide-nav{
+		display: none;
+	}
+	.summary-side{
+		width: 80%;
+	}
+	.chart{
+		width: 42.5%;
+		height: auto;
+	}
+	.box-1, .box-2, .box-3{
+		width: 30%;
+		height: 120px;
+	}
+	.box-2{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.section-2{
+		margin-left: 200px;
+	}
+	
+}
+
+/*-- ukuran layar untuk 400px kebawah --*/
+@media only screen and (max-width: 500px){
+	.box-1, .box-2, .box-3{
+		width: 100%;
+		height: 120px;
+		margin-top: 20px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.slide-nav{
+		width: 50%;
+	}
+	.box-value{
+		height: 350px;
+	}
+	.header-dashboard{
+		width: 100%;
+		height: 200px;
+	}
+	.box-1 h5, .box-2 h5, .box-3 h5{
+		font-size: 4.5vw;
+	}
+	.box-1 p, .box-2 p, .box-3 p{
+		font-size: 4vw;
+	}
+	span{
+		font-size: 3vw;
+	}
+	.button-1 img, .button-2 img, .button-3 img{
+		margin-top: -10px;
+	}
+	li.user{
+		height: 250px !important;
+	}
+	.button-function{
+		overflow: hidden !important;
+		position: absolute;
+		width: 90% !important;
+		left: 5% !important;
+		right: 5% !important;
+		margin-top: 120px;
+	}
+	.button-function li{
+		width: 22.875% !important;
+		height: 50px !important;
+		margin-left: 1.5% !important;
+
+	}
+	.button-function img{
+		margin-top: 15% !important;
+	}
+	li.status-akun{
+		margin-right: 0 !important;
+	}
+	li.chat{
+		margin-left: 0 !important;
+	}
+	.button-function p{
+		font-size: 10px !important;
+		display: none;
+	}
+	.nama-user, .jenis-akun, .jenis-usaha{
+		margin-left: 150px !important;
+	}
+}
+/*-- bagian navigasi slide--*/
+.closenav img{
+	position: relative;
+	margin-top: 10px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.closenav a{
+	display: none;
+	position: relative;
+	margin-top: 10px;
+	cursor: pointer;
+	margin-left: 20px;
+}
+.slide-nav {
+	transition: 0.5s;
+	overflow: hidden;
+	float: left;
+	position: fixed;
+	background: white;
+	width: 70%;
+	height: 100%;
+	box-shadow: 5px -1px 20px rgba(0, 0 , 0, 0.1);
+	z-index: 20;
+	display: none;
+}
+.logo{
+	position: relative;
+	width: 100%;
+	padding-top: 50px;
+}
+.logo img{
+	min-width: 10px;
+	max-width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+.slide-nav li{
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin-top: 20px;
+	padding-left: 10%;
+}
+.slide-nav .active{
+	background: #5BF1C7;
+}
+.slide-nav li:hover{
+	background: #5BF1C7;
+	cursor: pointer;
+}
+
+.slide-nav li a{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 5%;
+	font-family: Helvetica;
+}
+.slide-nav li img{
+	height: 20px;
+	margin-top: 15px;
+}
+
+.slide-nav li a{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 5%;
+	font-family: Helvetica;
+}
+.slide-nav li img{
+	height: 20px;
+	margin-top: 15px;
+}
+/*-- bagian navigasi biasa --*/
+.nav-device{
+	position: fixed;
+	width: 100%;
+	height: 50px;
+	background: white;
+	border-bottom: black;
+	z-index: 11;
+}
+.nav-device img{
+	height: 25px;
+	margin-top: 12.5px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+nav{
+	overflow: hidden;
+	float: left;
+	position: fixed;
+	background: white;
+	height: 100%;
+	width: 20%;
+	box-shadow: 5px -1px 20px rgba(0, 0 , 0, 0.1);
+}
+.logo{
+	position: relative;
+	width: 100%;
+	padding-top: 50px;
+}
+.logo img{
+	min-width: 10px;
+	max-width: 150px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+nav li{
+	width: 75%;
+	height: 50px;
+	display: block;
+	margin-top: 20px;
+	padding-left: 10%;
+}
+nav .active{
+	background: #5BF1C7;
+}
+nav li:hover{
+	background: #5BF1C7;
+	color: white;
+}
+
+nav li a{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	margin-top: 18px;
+	margin-left: 5%;
+	font-family: Helvetica;
+}
+nav li img{
+	height: 20px;
+	margin-top: 15px;
+}
+/*-- bagian header-dahboard --*/
+.header-dashboard{
+	background: linear-gradient(90deg, #68EAD4, #45FFB0);
+	float: right;
+}
+.profile-picture {
+	width: 180px;
+	height: 60px;
+	float: right;
+	z-index: 10;
+	margin-top: 10px;
+	margin-right: 5%;
+	overflow: hidden;
+}
+.name{
+	float: right;
+	font-family: Helvetica;
+	font-weight: lighter;
+	font-size: 15px;
+	opacity: 0.6;
+	height: 10px;
+	display: block;
+	margin-right: 20px;
+	margin-top: 20px;
+}
+.picture{
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	float: right;
+	overflow: hidden;
+}
+.picture img{
+	display: none;
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+}
+.tittle{
+	float: left;
+	font-family: Helvetica;
+	font-size: 30px;
+	color: black;
+	margin-top: 40px;
+	margin-left: 5%;
+	opacity: 0.8;
+}
+.company{
+	font-family: Helvetica;
+	font-size: 30px;
+	color: black;
+	margin-top: 45px;
+	text-align: center;
+
+}
+.box-value{
+	margin-top: 50px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: Helvetica;
+	text-transform: capitalize;
+	position: relative;
+	margin-top: 150px;
+
+}
+.box-1, .box-2, .box-3{
+	box-shadow: 2px 1px 5px rgba(0, 0, 0, 0.3);
+
+}
+.box-1{
+	border-radius: 24px;
+	background: #796BCB;
+	float: left;
+	position: relative;
+}
+.gambar-grafik img{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 10px;
+
+}
+.box-1 h5, .box-3 h5{
+	text-align: center;
+	color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+span{
+	font-weight: lighter;
+}
+.box-2 h5{
+	text-align: center;
+	color: black;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.box-1 p, .box-3 p{
+	color: white;
+	margin-left: 15%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+
+}
+.box-2 p{
+	color: black;
+	margin-left: 15%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.box-2{
+	border-radius: 24px;
+	background: #C8E5D6;
+	float: left;
+	position: relative;
+}
+.box-3{
+	border-radius: 24px;
+	background: #2A7EC7;
+	float: left;
+	position: relative;
+}
+.button-1 img, .button-2 img, .button-3 img{
+	position: relative;
+	display: none;
+	margin-right: 10px;
+}
+.summary-side {
+	height: auto;
+	float: right;
+}
+@media only screen and (min-width: 0px){
+/*-- ini merupakan bagian dari list user --*/
+	li.user{
+		position: relative;
+		margin-top: 20px;
+		overflow: hidden;
+		display: inline-block;
+		width: 90%;
+		height: 150px;
+		margin-left: 5%;
+		margin-right: 5%;
+		background: white;
+		border-radius: 10px;
+		box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+	}
+	.user{
+		display: inline-block;
+	}
+	.profile-picture-list{
+		position: absolute;
+		overflow: hidden;
+		width: 100px;
+		height: 100px;
+		margin-left: 25px;
+		margin-top: 25px;
+		margin-bottom: 50px;
+		border-radius: 10px;
+		background: pink;
+		z-index: 10;
+	}
+	.profile-picture-list img{
+		width: 120%;
+	}
+	.nama-user, .jenis-akun, .jenis-usaha{
+		display: block;
+		margin-left: 200px;
+		z-index: 200;
+		margin-top: 10px;
+	}
+	.nama-user{
+		margin-top: 30px;
+		max-width: 200px;
+	}
+	.jenis-akun h4, .jenis-usaha h4{
+		font-size: 12px;
+		font-family: sans-serif;
+		font-weight: lighter;
+	}
+	.button-function li{
+		width: 65px;
+		height: 80px;
+	}
+	.button-function img{
+		margin-top: 5px;
+		padding: 8%;
+		width: 50%;
+		margin-left: 15%;
+		margin-right: 15%;
+		margin-bottom: 5px;
+		border:2px solid #68EAD4;
+		border-radius: 5px;
+		box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+	}
+	i{
+		display: block;
+		width: 100%;
+		padding-bottom: 15px;
+		padding-top: 15px;
+		text-align: center;
+		font-size: 30px;
+		color: black;
+		border-radius: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		background: #68EAD4;
+		color: white;
+		box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+	}
+	i:hover{
+		color: #68EAD4;
+		background: white;
+	}
+	.button-function img:hover{
+		background: #68EAD4;
+		color: white;
+
+	}
+	.status-akun i{
+		background: white;
+		color: green;
+	}
+	i.fa-toggle-off{
+		color: red;
+
+	}
+	.button-function p {
+		font-family: Helvetica Neue;
+		text-align: center;
+		font-size: 12px;
+	}
+	.button-function{
+		overflow-x: scroll;
+		scroll-behavior: smooth;
+		transition: 0.8s;
+		white-space: nowrap;
+		width: 50%;
+		height: 100px;
+		top: 25px;
+		left: 350px;
+		position: absolute;
+
+	}
+	.button-function li{
+		top: 35px;
+		margin-left: 10px;
+	}
+	.button-function li{
+		display: inline-block;
+		top: 0;
+	}
+	.status-akun img:hover{
+		background: white;
+	}
+	li.status-akun h5{
+		text-align: center;
+	}
+}
+
+

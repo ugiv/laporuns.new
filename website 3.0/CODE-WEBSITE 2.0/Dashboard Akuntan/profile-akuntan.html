@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style-profile-akuntan.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="logo">
+		<img src="image/logo.png">
+	</div>
+	<div class="back-button">
+		<i class="fas fa-arrow-left" onclick="history.back()"></i>
+	</div>
+	<main>
+		<div class="tittle">
+			<h1>Profile</h1>
+		</div>
+		<form action="get" method="post">
+			<section class="section-1">
+				<label for="nama">Nama</label><br>
+				<input id="nama" type="text" name="nama" placeholder="Ugi Valentino"><br>
+				<label for="email">Email</label><br>
+				<input id="email" type="email" name="email" placeholder="ugi17001@mail.unpad.ac.id"><br>
+				<label for="pendidikan">Tahun Mulai Bekerja</label><br>
+				<input list="pendidikan-terakhir" id="pendidikan" name="" placeholder="Sarjana (S1)" autocomplete="off"><br>
+				<datalist id="pendidikan-terakhir">
+					<option>SMA</option>
+					<option>Diploma 3 (D3)</option>
+					<option>Sarjana Terapan (D4)</option>
+					<option>Sarjana (S1)</option>
+				</datalist>
+				<label for="phone">No Handphone</label><br>
+				<input id="phone" type="text" name="phone" placeholder="085......"><br>
+			</section><section class="section-2">
+				<label for="alamat">Alamat Rumah</label><br>
+				<input id="alamat" type="text-box" name="nama" placeholder="Bandung, ....."><br>
+				<label for="tahun-masuk">Tahun Mulai Bekerja</label><br>
+				<input list="tahun-masuk-bekerja" id="tahun-masuk" name="jenis" placeholder="2020" autocomplete="off"><br>
+				<datalist id="tahun-masuk-bekerja">
+					<option>2020</option>
+					<option>2021</option>
+					<option>2022</option>
+				</datalist>
+				<label for="posisi-di-laporuns">Bekerja Sebagai</label><br>
+				<input list="posisi" id="posisi-di-laporuns" name="jenis" placeholder="Staff Pembukuan" autocomplete="off"><br>
+				<datalist id="posisi">
+					<option>Akuntan</option>
+					<option>Staff Pembukuan</option>
+					<option>Staff Operational</option>
+				</datalist>
+				<label for="password">Password</label><br>
+				<input id="password" type="password" name="password" placeholder="*********" minlength="8" required><br>
+			</section>
+				<input id="submit" type="submit" name="submit" value="Update">
+		</form>
+	</main>
+
+</body>
+</html>

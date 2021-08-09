@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="dashboard.css">
+	<script type="text/javascript" src="chart.js" ></script>
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="nav-device">
+		<img class="openNav" onclick="openNav()" src="https://img.icons8.com/material-two-tone/24/000000/menu--v3.png"/>
+		<div class="logo-device">
+			<img src="image/logo.png">
+		</div>
+	</div>
+	<div id="slideNav" class="slide-nav">
+		<a href="javascript:void(0)" class="closenav"  onclick="closeNav()"><img src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"/></a>
+		<div class="logo">
+			<a href="laporuns.com"><img src="image/logo.png"></a>
+		</div>
+		<ul id="text">
+			<li class="active">
+				<img src="image/icon dashboard.png">
+				<a href="#">Dashboard</a>
+			</li>
+			<li>
+				<img src="image/icon akuntan.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/page-akuntan.html#">Akuntan</a>
+			</li>
+			<li>
+				<img src="image/icon laporan.png">
+				<a href="image/icon laporan.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/dashboard%20laporan.html">Laporan</a>
+			</li>
+			<li>
+				<img src="image/icon profile.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/profile.html#">Profile</a>
+			</li>
+			<li>
+				<img src="image/icon sign out.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/login-page.html">Sign Out</a>
+			</li>
+		</ul>
+	</div>
+	<nav>	
+		<div class="logo">
+			<a href="laporuns.com"><img src="image/logo.png"></a>
+		</div>
+		<ul>
+			<li class="active">
+				<img src="image/icon dashboard.png">
+				<a href="#">Dashboard</a>
+			</li>
+			<li>
+				<img src="image/icon akuntan.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/page-akuntan.html#">Akuntan</a>
+			</li>
+			<li>
+				<img src="image/icon laporan.png">
+				<a href="image/icon laporan.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/dashboard%20laporan.html">Laporan</a>
+			</li>
+			<li>
+				<img src="image/icon profile.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/profile.html#">Profile</a>
+			</li>
+			<li>
+				<img src="image/icon sign out.png">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/login-page.html">Sign Out</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="header-dashboard">
+		<div class="profile-picture">
+			<div class="picture">
+				<img src="image/profile david.jpeg">
+			</div>	
+			<div class="name">
+				<h4>David Jr</h4>
+			</div>		
+		</div>
+		<h3 class="title">Eartbone Cafe</h3>
+		<div class="box-value">
+			<a href="/Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20User/input-transaksi.html">
+				<div class="box-input-data">
+					<h4>Input Data<br>Transaksi</h4>
+					<i class="fas fa-plus"></i>
+				</div>
+			</a>
+			<a href="http:/laporuns.com">
+				<div class="box-1">
+					<h5>total pendapatan <span>mingguan</span></h5>
+					<p><span>rp </span>10.000.000</p>
+					<div class="gambar-grafik">
+						<img src="image/garis hitam.png">
+					</div>
+					<div class="button-1">
+						<img src="image/arrow button white.png">
+					</div>
+				</div>
+			</a>
+			<a href="http:/laporuns.com">
+				<div class="box-2">
+					<h5>total transaksi <span>mingguan</span></h5>
+					<p>350 transaksi</p>
+					<div class="gambar-grafik">
+						<img src="image/garis hitam.png">
+					</div>
+					<div class="button-2">
+						<img src="image/arrow button black.png">
+					</div>
+				</div>
+			</a>
+			<a href="http:/laporuns.com">
+				<div class="box-3" href="#">
+					<h5>total pengeluaran <span>mingguan</span></h5>
+					<p><span>rp </span>10.000.000</p>
+					<div class="gambar-grafik">
+						<img src="image/garis hitam.png">
+					</div>
+					<div class="button-3">
+						<img class="button-3" src="image/arrow button white.png">
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="summary-side">
+		<div class="chart">
+			<canvas id="myChart1"></canvas>
+		</div>
+		<div class="chart">
+			<canvas id="myChart2"></canvas>
+		</div>
+		<div class="chart">
+			<canvas id="myChart3"></canvas>
+		</div>
+		<div class="chart" style="margin-bottom: 40px;">
+			<canvas id="myChart4"></canvas>
+		</div>
+	</div>
+<script>
+		var ctx = document.getElementById("myChart").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["Pekerja", "Bahan Baku", "Maret", "April", "Mei", "Juni"],
+				datasets: [{
+					label: 'Penjualan',
+					data: [1200, 1600, 1256, 1430, 1450, 1500],
+					backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+					'rgba(255,99,132,1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});
+</script>
+<script>
+		var ctx = document.getElementById("myChart4").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
+				datasets: [{
+					label: ["Biaya Operasional (000)"],
+					data: [1200, 1600, 1256, 1430, 1450, 1500],
+					backgroundColor: [
+					'rgba(255, 99, 132, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+					'gba(75, 192, 192, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});
+</script>
+<script>
+		var ctx = document.getElementById("myChart3").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
+				datasets: [{
+					label: ["Penjualan (Unit)"],
+					data: [1200, 1300, 1256, 1430, 1450, 1500],
+					backgroundColor: [
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+					'gba(75, 192, 192, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});
+</script>
+<script>
+		var ctx = document.getElementById("myChart2").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
+				datasets: [{
+					label: 'Pendapatan Usaha (000)',
+					data: [14000, 16500, 17560, 18900, 19890, 21700],
+					backgroundColor: [
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+					'rgba(54, 162, 235, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});
+	</script>
+	<script>
+		var ctx = document.getElementById("myChart1").getContext('2d');
+		var myChart = new Chart(ctx, {
+			type: 'line',
+			data: {
+				labels: ["Januari", "Februari", "Maret", "April", "Mei", "Juni"],
+				datasets: [{
+					label: ["Laba Bersih (000)"],
+					data: [12000, 13000, 12560, 14300, 14500, 19000],
+					backgroundColor: [
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(54, 162, 235, 0.2)',
+					'rgba(255, 206, 86, 0.2)',
+					'rgba(75, 192, 192, 0.2)',
+					'rgba(153, 102, 255, 0.2)',
+					'rgba(255, 159, 64, 0.2)'
+					],
+					borderColor: [
+					'rgba(255, 159, 64, 1)',
+					'rgba(54, 162, 235, 1)',
+					'rgba(255, 206, 86, 1)',
+					'rgba(75, 192, 192, 1)',
+					'rgba(153, 102, 255, 1)',
+					'rgba(255, 159, 64, 1)'
+					],
+					borderWidth: 1
+				}]
+			},
+			options: {
+				scales: {
+					yAxes: [{
+						ticks: {
+							beginAtZero:true
+						}
+					}]
+				}
+			}
+		});
+	</script>
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById("slideNav").style.display = "block";
+		document.getElementById("text").style.display = "block";
+	}
+	function closeNav() {
+		document.getElementById("slideNav").style.display = "none";
+		document.getElementById("text").style.display = "none";
+	}
+</script>
+</body>
+</html>

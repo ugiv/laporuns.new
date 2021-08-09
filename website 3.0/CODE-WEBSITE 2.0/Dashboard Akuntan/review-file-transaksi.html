@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Review File Transaksi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="styles-review-file-transaksi.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="back-button">
+			<i class="fas fa-arrow-left" onclick="history.back()"></i>
+		</div>
+	<div class="logo">
+		<img src="image/logo.png">
+	</div>
+	<nav>
+			<a href="javascript:void(0)" id="buttonFile" class="file" onclick="openFile()">File Review</a>
+			<a href="javascript:void(0)" id="buttonTransaction" class="transaction" onclick="openTransaction()">Transaksi</a>
+		</nav>
+	<main>
+		<div class="isian">
+			<div class="file-view" id="fileReview">
+				<ul>
+					<li><a href="file/Transaksi Harian.pdf" target="_blank">transaksi.pdf</a></li>
+					<li><a href="file/Transaksi Harian.docx">transaksi.word</a></li>
+					<li><a href="file/Transaksi Harian.xlsx">Transaksi.xlsx</a></li>
+					<li><a href="image/ugi.jpg" target="_blank">Transaksi.jpg</a></li>
+				</ul>
+			</div>
+			<div class="transaction-view" id="transactionReview" style="display: none;">
+				<ul>
+					<li>
+						<h5>Pendapatan Harian</h5>
+						<span>Kredit</span><p>Rp 1.500.000</p>
+					</li>
+					<li>
+						<h5>Pembelian Bahan Baku</h5>
+						<span>Debit</span><p>Rp 500.000</p>
+					</li>
+					<li>
+						<h5>Iuran Kebersihan</h5>
+						<span>Kredit</span><p>Rp 50.000</p>
+					</li>
+					<li>
+						<h5>Bayar Listrik</h5>
+						<span>Kredit</span><p>Rp 200.000</p>
+					</li>
+					<li>
+						<h5>Utang Karyawan</h5>
+						<span>Debit</span><p>Rp 400.000</p>
+					</li>
+					<li>
+						<h5>Pembayaran Keamanan</h5>
+						<span>Debit</span><p>Rp 40.000</p>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</main>
+
+
+
+<script type="text/javascript">
+	function openFile() {
+		document.getElementById("fileReview").style.display = "block";
+		document.getElementById("transactionReview").style.display = "none";
+		document.getElementById("buttonTransaction").style.background = "#68EAD4";
+		document.getElementById("buttonFile").style.background = "white";
+		document.getElementById("buttonTransaction").style.color = "white";
+		document.getElementById("buttonFile").style.color = "black";
+
+
+	}
+	function openTransaction() {
+		document.getElementById("transactionReview").style.display = "block";
+		document.getElementById("fileReview").style.display = "none";
+		document.getElementById("buttonTransaction").style.background = "white";
+		document.getElementById("buttonFile").style.background = "#68EAD4";
+		document.getElementById("buttonFile").style.color = "white";
+		document.getElementById("buttonTransaction").style.color = "black";
+
+	}
+</script>
+</body>
+</html>
+
+
+
+

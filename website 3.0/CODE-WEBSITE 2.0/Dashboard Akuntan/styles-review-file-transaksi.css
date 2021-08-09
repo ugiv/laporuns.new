@@ -1,0 +1,145 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body, html{
+	background: #F0F0F0;
+	font-family: Helvetica Neue;
+	height: 100%;
+	width: 100%;
+}
+main{
+	width: 80%;
+	height: 80%;
+	background: white;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	border-radius: 10px;
+	overflow: scroll;
+
+}
+nav{
+	display: block;
+	position: fixed;
+	width: 80%;
+	top: 10%;
+	left: 10%;
+	z-index: 10;
+}
+.logo img{
+	width: 10%;
+	position: absolute;
+	left: 45%;
+	top: 2.5%;
+}
+.isian{
+	padding-top: 60px;
+	padding-bottom: 80px;
+}
+.file-view li, .transaction-view li{
+	display: block;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.transaction, .file  {
+	width: 50%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background: white;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	letter-spacing: 2px;
+	font-weight: bold;
+
+}
+.transaction{
+	background: #68EAD4;
+	color: white;
+}
+.file{
+	background: white;
+}
+a.transaction{
+	margin-left: -4.5px;
+	border-radius: 0 10px 0 0 ;
+}
+a.file{
+	border-radius: 10px 0 0 0;
+}
+.file-view{
+	width: 100%;
+}
+.transaction-view{
+	overflow: scroll;
+}
+.file-view a {
+	text-decoration: none;
+	color: black;
+	text-transform: capitalize;
+}
+h5{
+	text-align: left;
+	font-size: 16px;
+	font-weight: normal;
+}
+p{
+	text-align: right;
+	margin-top: -20px;
+}
+.back-button{
+	font-size: 20px;
+	position: absolute;
+	top: 4%;
+	left: 10%;
+	cursor: pointer;
+}
+span{
+	display: block;
+	text-align: left;
+	margin-top: 5px;
+	font-size: 11px;
+	font-weight: bold;
+
+}
+@media only screen and (max-width: 500px){
+	.logo img{
+		width: 30% !important;
+		left: 35% !important;
+		top: 3.5% !important;
+	}
+	h5{
+		font-size: 14px;
+	}
+	p{
+		font-size: 14px;
+	}
+	span{
+		font-size: 10px;
+	}
+	.transaction, .file{
+		letter-spacing: 1px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	a{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1030px){
+	.logo img{
+		width: 20%;
+		left: 40%;
+		top: 2.5%;
+	}
+}
+
+
+
+
+

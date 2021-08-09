@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="login-style.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="back-button">
+		<i class="fas fa-arrow-left" onclick="history.back()"></i>
+	</div>
+	<main>
+		<div class="banner">
+			<div class="container">
+				<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/index.html"><img class="logo" src="image/logo white.png"></a>
+				<h1>Let's get started</h1>
+				<img class="banner-img" src="image/sign-up.png">
+			</div>
+		</div>
+		<div class="login-form">
+			<div class="container">	
+				<div class="title">
+					<h2>Sign Up</h2>
+				</div>
+				<form action="/.php" method="get" >
+					<label for="nama">Nama Lengkap</label><br>
+					<input class="nama" type="text" name="email" required><br>
+					<label for="email">Alamat Email</label><br>
+					<input class="email" type="email" name="email" required><br>
+					<label for="password-confirmation">Password</label><br>
+					<input class="password-confirmation" type="password" name="password" minlength="8" required><br>
+					<label for="password">Konfirmasi Password</label><br>
+					<input class="password" type="password" name="password" minlength="8" required><br>
+					<input type="checkbox" name="agreement" class="agreement" value="agree" required>
+					<label class="label-agree" for="agreement">I have read and agree to the <span><a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Term%20and%20condition.html">Terms of service</a><span></label>
+					<div class="forgot-password" style="display: none;">
+						<a href="#">Forget password ?</a>
+					</div>
+					<button class="login-button" type="submit" name="login" value="login"><span>Sign Up</span> </button>
+				</form>
+				<div class="sign-up">
+					<h4>Already have an account ? <span><a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/login-page.html">Login</a></span></h4>
+				</div>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

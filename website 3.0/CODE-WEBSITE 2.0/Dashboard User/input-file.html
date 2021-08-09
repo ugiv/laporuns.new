@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input File</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="styles-input-file.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+	<div class="back-button">
+		<i class="fas fa-arrow-left" onclick="history.back()"></i>
+	</div>
+	<div class="logo">
+		<img src="image/logo.png">
+	</div>
+	<main>
+		<div class="tittle">
+			<h1>Silakan Input Transaksi</h1>
+		</div>
+		<form action="/.php" method="get">
+			<ul>
+				<div id="dinamis-form">
+				<section>
+					<li class="utama">
+						<input id="deskripsi" type="text" name="Deskripsi" placeholder="Deskripsi" >
+						<input id="date" type="date" name="date" placeholder="dd/mm/yyyy">
+						<input id="file" type="file" class="file-class" name="file" multiple>
+					</li>
+				</section>
+				</div>
+				<div class="button">
+					<a href="javascript:void(0)" class="add-input" id="addInput" onclick="addInput()">Tambah</a>
+					<a href="javascript:void(0)" class="remove-input" id="removeInput" onclick="removeInput()">Hapus</a>
+				</div>
+				<input id="upload-button" type="submit" value="Upload">
+			</ul>
+			</div>
+		</form>
+	</main>
+<script>
+function addInput(){
+  var elmnt = document.getElementsByClassName("utama")[0];
+  var cln = elmnt.cloneNode(true);
+  document.getElementById('dinamis-form').appendChild(cln);
+}
+function removeInput(){
+	document.getElementById('dinamis-form').removeChild(cln) = none;
+}
+</script>
+</body>
+</html>

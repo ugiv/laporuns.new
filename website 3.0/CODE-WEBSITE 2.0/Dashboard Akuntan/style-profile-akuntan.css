@@ -1,0 +1,75 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body, html{
+	width: 100%;
+	height: 100%;
+	background: #F0F0F0;
+}
+.logo img{
+	width: 15%;
+	top: 5%;
+	margin-left: 42.5%;
+	position: absolute;
+}
+.back-button i{
+	position: absolute;
+	margin-left: 10%;
+	top: 7%;
+	font-size: 25px;
+}
+main{
+	width: 80%;
+	height: 90%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: white;
+	margin-top: 10%;
+	border-radius: 20px;
+}
+.tittle{
+	text-align: center;
+	font-family: Helvetica Neue;
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+form{
+	padding-top: 50px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+form input{
+	width: 70%;
+	padding-right: 1%;
+	padding-left: 1%;
+	margin-left: 15%;
+	height: 30px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+	border: 1px solid #68EAD4;
+	font-family: Helvetica Neue;
+}
+section{
+	display: inline-block;
+	width: 50%;
+	margin-bottom: 50px;
+}
+label{
+	margin-left: 15%;
+	font-family: Helvetica Neue;
+}
+#submit{
+	margin-top: 100px;
+	width: 20%;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+}
+#pendidikan, #tahun-masuk, #posisi-di-laporuns{
+	cursor: pointer;
+}
+
+

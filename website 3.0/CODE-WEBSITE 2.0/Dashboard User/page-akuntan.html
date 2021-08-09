@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Akuntan</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, inital-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="styles-akuntan.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+	<div id="background-javascript">
+		
+	</div>
+	<div class="back-button">
+		<i class="fas fa-arrow-left" onclick="history.back()"></i>
+	</div>
+	<div class="logo">
+		<img src="image/logo.png">
+	</div>
+	<main>
+		<div class="profile">
+			<div class="profile-picture">
+				<img src="image/ugi.jpg">
+			</div>
+			<div class="text">
+				<h3>Ugi Valentino</h3>
+				<p>Rating: 4.5</p>
+			</div>
+		</div>
+		<div class="button-function">
+			<a href="javascript:void(0)" onclick="OpenRating()" id="buttonRating">
+				<div class="tombol tombol-pertama">
+					<i class="fas fa-star"></i>
+					<p>Rating</p>
+				</div>
+			</a>
+			<a href="javascript:void(0)" onclick="openRating()" id="buttonReview">
+				<div class="tombol tombol-tengah">
+					<i class="fas fa-comment-alt"></i>
+					<p>Review</p>
+				</div>
+			</a>
+			<a href="file:///Users/ugiv46/Downloads/LAPORUNS/website%203.0/CODE-WEBSITE%202.0/Dashboard%20Akuntan/chat-page.html">
+				<div class="tombol">
+					<i class="fas fa-comment-dots"></i>
+					<p>Chat</p>
+				</div>
+			</a>
+		</div>
+	</main>
+	<div id="rating-page" class="rating">
+		<form action="/.php" method="get">
+			<p class="tittle">Seberapa puas anda terhadap akuntan kami ?</p>
+  			<input id="myRange" type="range" min="1" max="5" value="0" class="slider" id="myRange">
+  			<p class="value">Rating: <span id="demo"></span></p>
+  			<input id="button-upload-rating" class="button" type="submit" name="kirim" value="Update" onclick="hiddenRating()">
+		</form>
+	</div>
+	<div id="review-page" class="review">
+		<i class="fa fas-times-dots"></i>
+		<p>Apa saja kekurangan akuntan kami ?</p>
+		<form>
+			<textarea id="boxReview" cols="num" rows="num">
+				
+			</textarea><br>
+			<input class="button-upload-review" type="submit" name="upload" value="Upload">
+		</form>
+	</div>
+<script type="text/javascript">
+	function OpenRating() {
+		document.getElementById("rating-page").style.display = "block";
+		document.getElementById("background-javascript") .style.display = "block"
+	}
+	function hiddenRating() {
+		document.getElementById("rating-page").style.display = "none";
+	}
+	function openRating() {
+		document.getElementById("review-page") .style.display = "block"
+		document.getElementById("background-javascript") .style.display = "block"
+
+	}
+	var slider = document.getElementById("myRange");
+	var output = document.getElementById("demo");
+	output.innerHTML = slider.value;
+
+	slider.oninput = function() {
+		output.innerHTML = this.value;
+}
+</script>
+</body>
+</html>

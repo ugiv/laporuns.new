@@ -1,0 +1,110 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: #F0F0F0;
+	font-family: Helvetica Neue;
+}
+main{
+	width: 80%;
+	height: auto;
+	background: white;
+	border-radius: 20px;
+	margin-top: 60px;
+	margin-bottom: 100px;
+	margin-left: 10%;
+	margin-right: 10%;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+main form{
+	width: 50%;
+	height: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.tittle{
+	padding-top: 50px;
+}
+input{
+	width: 90%;
+	height: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+	background: #F0F0F0;
+	border-radius: 5px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	background: white;
+	border: 1px solid #68EAD4;
+}
+h1{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 22px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+img.logo{
+	width: 20%;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 40px;
+}
+.back-button i{
+	position: absolute;
+	display: block;
+	margin-left: 10%;
+	cursor: pointer;
+	font-size: 25px;
+	top: 8%;
+}
+.back-button img:hover{
+	background: #F0F0F0;
+}
+img.back-button{
+}
+input#pilihan-paket{
+	width: 50px;
+}
+input#submit{
+	height: 40px;
+	margin-top: 50px !important;
+	display: block;
+	width: 50%;
+	margin: 0 auto;
+	cursor: pointer;
+	font-size: 16px;
+}
+#submit:hover{
+	color: white;
+	background: #68EAD4;
+}
+@media only screen and (max-width: 900px){
+	main{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 20px;
+	}
+	main form{
+		width: 80% !important;
+		margin-left: 10% !important;
+		margin-right: 10% !important;
+	}
+	img.logo{
+		width: 50% !important;
+		margin-left: 25% !important;
+		margin-right: 25% !important;
+	}
+	.back-button i{
+		margin-left: 5% !important;
+		margin-top: 50px;
+	}
+
+
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pilihan Akuntan</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="styles-pilihan-akuntan.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="back-button">
+		<i class="fas fa-arrow-left" onclick="history.back()"></i>
+	</div>
+	<div class="logo">
+		<img src="image/logo.png">
+	</div>
+	<main>
+		<div class="akuntan-saat-ini">
+			<div class="profile-picture">
+				<img src="image/ugi.jpg">
+			</div>
+			<p><strong>Nama</strong>: Ugi Valentino</p>
+			<p><strong>Rating</strong>: 2.5 </p>
+			<p><strong>Mulai Bekerja</strong>: Mei 2021</p>
+			<p class="kekurangan"><strong>Review Kinerja</strong>: <br>
+			<span>Kurang teliti dalam mengecek data yang sudah dikirim sehingga banyak tanya. Sebaiknya akuntannya diganti saja</span></p>
+		</div>
+		<form action="/.php" method="get">
+			<label for="pilihan-akuntan">Pilihan Akuntan</label><br>
+			<input id="pilihan-akuntan" type="list" name="akuntan" list="akuntan-pilihan">
+			<datalist id="akuntan-pilihan">
+				<option>Ugi Valentino</option>
+				<option>Faruqi Arief</option>
+				<option>Syabian</option>
+				<option>Sarah</option>
+			</datalist><br>
+			<input id="update" type="submit" name="updat" value="Update">
+		</form>
+	</main>
+
+</body>
+</html>

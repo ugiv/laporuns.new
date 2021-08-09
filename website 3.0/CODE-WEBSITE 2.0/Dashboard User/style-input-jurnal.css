@@ -1,0 +1,228 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	font-family: Helvetica Neue;
+	background: #F0F0F0;
+}
+.logo img{
+	width: 10%;
+	position: absolute;
+	top: 2.5%;
+	left: 45%;
+}
+h1{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 18px;
+	padding-top: 2.5%;
+	padding-bottom: 2.5%;
+}
+main{
+	position: absolute;
+	width: 80%;
+	height: 80%;
+	background: white;
+	border-radius: 10px;
+	left: 10%;
+	top: 10%;
+	overflow: scroll;
+	padding-bottom: 50px;
+}
+.name-top {
+	background: none !important;
+	margin-bottom: -30px;
+}
+.name-top li {
+	font-size: 16px;
+	padding-top: 10.5px;
+	padding-bottom: 10.5px;
+	width: 30%;
+	margin-left: 2.25%;
+	display: inline-block;
+	background: white;
+	text-align: left;
+	font-weight: bold;
+}
+.input-transaksi{
+	display: inline-block;
+	width: 80%;
+	height: 35px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: 15px;
+	background: #68EAD4;
+	text-decoration: none;
+	border-radius: 10px;
+}
+.hasil{
+	background: none;
+}
+.hasil input{
+	background: #F0F0F0;
+}
+input{
+	width: 26%;
+	margin-left: 2.25%;
+	height: 35px;
+	border: none;
+	border-radius: 5px;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 5px;
+
+}
+input value{
+	opacity: 0.2;
+}
+input.jenisakun{
+	width: 15%;
+}
+
+#upload{
+	width: 10%;
+	margin-top: 5%;
+	margin-left: 45%;
+	border: 2px solid #68EAD4;
+	cursor: pointer;
+}
+.back-button{
+	position: absolute;
+	top: 3.5%;
+	left: 10%;
+	font-size: 20px;
+	cursor: pointer;
+}
+.back-button i:hover{
+	color: #68EAD4;
+}
+.input2{
+	display: none;
+}
+.button{
+	padding-top: 40px;
+	margin-left: 10%;
+}
+.remove-input{
+	margin-left: 5px;
+}
+a.add-input, a.remove-input{
+	margin-top: 20px;
+	padding: 10px 10px;
+	background: #68EAD4;
+	text-decoration: none;
+	color: black;
+	border-radius: 5px;
+	font-size: 13px;
+	cursor: pointer;
+	font-weight: bold;
+}
+input#date{
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+	width: 96% !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	cursor: pointer;
+	border: 1px solid #68EAD4;
+	margin-left: 0;
+	margin-top: 10px;
+
+}
+.date-t{
+	float: left;
+	margin-left: 1px;
+}
+.date-section{
+	float: left;
+	margin-left: 10%;
+	width: 20%;
+	display: block;
+	font-family: Helvetica Neue;
+	font-size: 14px;
+}
+@media only screen and (max-width: 850px){
+	main{
+		width: 90%;
+		height: auto;
+		padding-bottom: 50px;
+		left: 5%;
+		top: 15%;
+	}
+	.back-button{
+		left: 5%;
+	}
+	.logo img{
+		width: 20%;
+		left: 40%;
+	}
+	.date-section{
+		width: 30%;
+		margin-left: 5%;
+	}
+	.input-transaksi{
+		width: 90%;
+		margin-left: 5%;
+	}
+	#upload{
+		width: 20%;
+	}
+	.button{
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width: 450px){
+	#upload{
+		width: 30%;
+		margin-left: 35%;
+		margin-top: 60px;
+	}
+	.button{
+		margin-left: 5%;
+		padding-top: 20px;
+	}
+	.back-button{
+		left: 5%;
+	}
+	.logo img{
+		width: 30%;
+		left: 35%;
+	}
+	.tittle h1{
+		font-size: 14px;
+		margin-top: 10px;
+		margin-bottom: 15px;
+	}
+	main{
+		width: 90%;
+		left: 5%;
+	}
+	.input-transaksi {
+		width: 550px;
+		margin-left: 5%;
+	}
+	.date-section{
+		width: 50%;
+		margin-left: 5%;
+		margin-bottom: 5px;
+		margin-top: 1px;
+	}
+
+	input#date {
+		font-size: 12px;
+		margin-top: 4px;
+		padding-top: 1px;
+		padding-bottom: 1px;
+	}
+	.date-t{
+		font-size: 10px;
+	}
+	section{
+		width: 100%;
+		overflow: scroll;
+	}
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Form</title>
+	<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<body>
+		<nav>
+			<div id="home">
+				<div class="nav-brand">
+					<a href="file:///Users/ugiv46/Downloads/LAPORUNS/CODE-WEBSITE%202.0/index.html"><img src="image/logo.png"></a>
+				</div>
+				<ul class="nav-text">
+					<li><a href="file:///Users/ugiv46/Downloads/LAPORUNS/CODE-WEBSITE%202.0/index.html" class="active">home</a></li>
+					<li><a href="#about">about</a></li>
+					<li><a href="#">price</a></li>
+					<li><a href="#">support</a></li>
+				</ul>
+				<div class="user-button">
+				<a href="#"><img src="image/account.png"></a>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="title banner-title">
+				<h2>Let’s create your account!</h2>
+			</div>
+			<div class="banner">
+				<img src="image/Man create account.png">
+			</div>
+		</div>
+	<main>
+		<div class="title">
+				<h1>SIGN UP</h1>
+			</div>
+		<form action="post" id="form">
+			<div class="container-2">
+					<label for="nama-lengkap">Nama Lengkap</label>
+					<br>
+					<input class="isi" id="nama-lengkap" type="text" name="nama lengkap" required>
+					<br>
+					<label for="tanggal-lahir">Tanggal Lahir</label>
+					<br>
+					<input class="isi" id="tanggal-lahir" type="date" name="tanggl lahir" required>
+					<br>
+					<label for="email">Email</label>
+					<br>
+					<input class="isi" id="email" type="email" name="email" required>
+					<br>
+					<label for="password">Password</label>
+					<br>
+					<input class="isi" id="password" type="password" name="password">
+					<br>
+					<label for="phone-number">No Telefon</label>
+					<br>
+					<input class="isi" type="text" name="phone number" minlength="10" maxlength="13">	
+					<br>
+					<label class="jenis-usaha" for="jenis-usaha">Jenis Usaha</label>
+					<br>
+					<select class="isi" id="jenis-usaha" class="pas1">
+						<option value="jasa">Jasa</option>
+						<option value="kuliner">Kuliner</option>
+						<option value="fashion">Fashion</option>
+						<option value="transportasi">Transportasi</option>
+					</select>
+			</div>
+			<input id="submit" type="submit" name="submit" value="Login" >
+		</form>
+	</main>
+
+</body>
+</html>

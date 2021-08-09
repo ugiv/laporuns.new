@@ -1,0 +1,962 @@
+
+/*-- bagian awal yang tak terpengaruh ukuran mobile maupun desktop --*/
+/*-- bagian navigasi normal --*/
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	width: 100%;
+}
+@media only screen and (max-width: 950px){
+	.navigasi-normal{
+		display: none;
+	}
+}
+@media only screen and (min-width: 950px){
+	.nav-device {
+		display: none;
+	}
+	.slide-nav {
+		display: none;
+	}
+}
+body{
+	background: rgba(0, 0, 0, 0.02);
+}
+nav{
+	position: absolute;
+	width: 100%;
+	height: 80px;
+}
+.container{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.container-2{
+
+}
+@media only screen and (max-width: 800px )
+{
+	.price .header p{
+		font-size: 12px;
+		text-align: center;
+	}
+	.price .header h2{
+		font-size: 20px;
+	}
+	.price .grey h2{
+		font-size: 18px;
+	}
+	.price .grey p{
+		font-size: 12px;
+		margin-top: 15px;
+		margin-bottom: 5px;
+	}
+	.laporuns {
+		height: auto !important;
+		width: 100% !important;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	.laporuns .title{
+		width: 100% !important;
+		margin-left: 0;
+		} 
+	.laporuns li{
+		height: 300px !important;
+	}
+	.laporuns li h3{
+		font-size: 18px;
+	}
+	.laporuns li p{
+		font-size: 12px !important;
+		line-height: 19px !important;
+	}
+	.fitur p{
+		font-size: 14px;
+	}
+
+}
+/*-- bagian awal tampilan general --*/
+@media only screen and (min-width: 0px){
+	body{
+		width: 100%;
+	}
+/*-- bagian navigasi --*/
+	.logo img{
+		margin-top: 15px;
+		width: 180px;
+		float: left;
+	}
+	.nav-device{
+		position: fixed;
+		background: white;
+		width: 100%;
+		height: 80px;
+		z-index: 9;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+	}
+	img.open-nav{
+		float: right;
+		position: relative;
+		display: block;
+		margin-top: 30px;
+		z-index: 9;
+		margin-left: 30px;
+	}
+	/*-- bagian awal nav device --*/
+	.sign-device-2{
+		margin-top: 80vw;
+		position: absolute;
+		width: 90%;
+	}
+	.sign-device-2 ul{
+		text-align: center;
+		width: 40%;
+		margin-left: 30%;
+		margin-right: 30%;
+		height: 50px;
+		background: white;
+	}
+	.sign-device-2 li{
+		font-size: 3vw;
+		margin-top: 40px;
+		display: block;
+		text-align: center;
+	}
+	.sign-device-2 li a{
+		display: block;
+		padding: 1vw 1.5vw;
+		font-family: Helvetica Neue;
+		text-decoration: none;
+		color: black;
+		border-radius: 10px;
+		margin-top: 10px;
+
+	}
+	.slide-nav .text-menu{
+		position: absolute;
+		margin-top: 20vw;
+	}
+	.text-menu li{
+		display: block;
+		margin-top: 7vw;
+	}
+	.text-menu a{
+		font-size: 2.3vw;
+		font-family: Helvetica Neue;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: black;
+	}
+	.active-box-2 a{
+		background: #FCE38A;
+		font-weight: bold;
+
+	}
+	.active-box-3 a{
+		background: white;
+		border: 2px solid #68EAD4;
+	}
+	/*-- bagian akhir nav-device --*/
+	.nav-text{
+		position: relative;
+		margin-left: 30%;
+		width: 400px;x
+		background: pink
+	}
+	.nav-text li{
+		margin-top: 30px;
+		display: inline-block;
+		float: left;
+	}
+	.nav-text li a{
+		font-size: 18px;
+		text-decoration: none;
+		color: black;
+		font-family: Helvetica Neue;
+		text-transform: capitalize;
+		margin-right: 35px;
+		font-weight: normal;
+		opacity: 50%;
+	}
+	.nav-text li a:hover{
+		color: #FF75A0;
+		padding-bottom: 10px;
+	}
+	li.active-text a{
+		font-weight: bold;
+		color: #FF75A0;
+		padding-bottom: 10px;
+		border-bottom: 2px solid #FF75A0 ;
+		opacity: 100%;
+	}
+	.sign-up-in{
+		float: right;
+	}
+	.sign-up-in li{
+		display: inline-block;
+		margin-top: 30px;
+	}
+	.sign-up-in li a{
+		margin-right: 30px;
+		font-size: 18px;
+		text-decoration: none;
+		color: black;
+		font-family: Helvetica Neue;
+		text-transform: capitalize;
+	}
+	li.active-box a{
+		padding: 10px 15px;
+		font-weight: bold;
+		color: black;
+		background: white;
+		border-radius: 10px;
+
+	}
+	li.active-box a:hover{
+		background: #FCE38A;
+		color: white;
+	}
+	.slide-nav{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: white;
+		z-index: 10;
+		display: none;
+	}
+	.slide-nav .closenav{
+	}
+	a.closenav img{
+		position: absolute;
+		right: 30px;
+		margin-top: 30px;
+	}
+	.logo-slide img{
+		margin-top: 15px;
+	}
+	.sign-device li{
+		margin-top: 33px;      
+		float: right;
+		display: inline-block;
+	}
+	.sign-device li a{
+		text-decoration: none;
+		text-transform: capitalize;
+		margin-left: 20px;
+		color: black;
+		font-family: Helvetica Neue;
+	}
+	.active-box-slide a{
+		padding: 10px 15px;
+		font-weight: bold;
+		color: black;
+		background: #FCE38A;
+		border-radius: 10px;
+}
+/*-- bagian navigasi slide --*/
+/*-- bagian jumbotron --*/
+	.background img{
+		width: 120%;
+	}
+	.ilustrasi img{
+		width: 50%;
+	}
+	.isi-jumbotron{
+		width: 100%;
+	}
+	.title{
+		width: 40%;
+	}
+	.title{
+		margin-left: 5%;
+		margin-right: 5%;
+		height: 500px;
+		float: left;
+	}
+	.background-mobile img{
+		display: none;
+	}
+	.ilustrasi img{
+		float: left;
+	}
+	.isi-jumbotron{
+		position: absolute;
+		height: 700px;
+		top: 13vw;
+		overflow: hidden;
+	}
+	.background{
+		overflow: hidden;
+	}
+	.background img{
+		float: right;
+		width: 120%;
+		margin-right: -18px;
+		margin-top: -80px;
+	}
+	.title h3{
+		font-size: 1.5vw;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		margin-bottom: 1.5vw;
+		color: #FF75A0;
+	}
+	.title h1{
+		font-size: 3.5vw;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		margin-bottom: 2vw;
+		line-height: 6vw;
+		margin-right: 
+	}
+	.title p{
+		font-size: 1.3vw;
+		font-family: Helvetica Neue;
+		line-height: 2.5vw;
+		margin-bottom: 3.5vw;
+	}
+	a.get-started{
+		font-size: 1.3vw;
+		text-align: center;
+		padding: 1vw 1.5vw;
+		background: #68EAD4;
+		border-radius: 10px;
+		text-decoration: none;
+		color: white;
+		font-family: Helvetica Neue;
+		margin-right: 1.5vw;
+	}
+	a.contact-us{
+		font-size: 1.3vw;
+		text-align: center;
+		padding: 1vw 1.5vw;
+		background: #FCE38A;
+		border-radius: 10px;
+		text-decoration: none;
+		color: black;
+		font-family: Helvetica Neue;
+	}
+	.ilustrasi img{
+		width: 50%;
+	}
+	.isi-jumbotron{
+		width: 100%;
+	}
+	.title{
+		width: 38%;
+	}
+	.background-mobile img{
+		display: none;
+	}
+	.ilustrasi img{
+		float: left;
+	}
+	.title{
+		position: relative;
+		margin-left: 5%;
+		margin-right: 5%;
+		height: 500px;
+		float: left;
+	}
+/*-- bagian awal laporuns --*/
+	.laporuns{
+		width: 90%;
+		height: auto;
+		margin-right: 5%;
+		margin-left: 5%;
+		margin-top: -100px;
+		overflow: hidden;
+	}
+	.laporuns .title{
+		position: absolute;
+		text-align: center;
+		width: 80%;
+		height: 50px;
+		margin-top: 70px;
+		font-family: Helvetica Neue;
+	}
+	.laporuns .title p{
+		font-size: 1.2vw;
+		opacity: 0.6;
+	}
+	.laporuns ul{
+		width: 100%;
+		height: auto;
+		background: pink;
+	}
+	.upload{
+		margin-left: 7.5%;
+	}
+	.laporuns .proses{
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.selesai{
+		margin-right: 7.5%;
+	}
+	.laporuns li{
+		margin-top: 180px;
+		margin-bottom: 20px;
+		display: inline-block;
+		border-radius: 10px;
+		width: 25%;
+		height: 340px;
+		float: left;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+		transition: 0.5s;
+		background: #68EAD4;
+	}
+	.laporuns li:hover{
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+		transform: scale(1.1);
+	}
+	.laporuns li img{
+		width: 20%;
+		margin-top: 20px;
+		margin-right: 40%;
+		margin-left: 40%;
+		margin-bottom: 30px;
+		border-radius: 15%;
+	}
+	.laporuns li h3, .laporuns li p{
+		width: 80%;
+		margin-right: 10%;
+		margin-left: 10%;
+		text-align: center;
+		margin-bottom: 20px;
+		font-family: Helvetica Neue;
+		line-height: 2.5vw;
+		color: white;
+	}
+	.laporuns h3{
+		font-weight: bold;
+		font-size: 20px;
+	}
+	.laporuns li p{
+		font-size: 15px;
+		line-height: 22px;
+	}
+	body{
+		width: 100%;
+	}
+/*-- bagian perubahanlaporan keuangan --*/
+	.perubahan-laporan-keuangan{
+		position: relative;
+		width: 100%;
+		height: 75vw;
+		overflow: hidden;
+	}
+	.text-perubahan{
+		font-size: 2vw;
+		position: absolute;
+		text-align: center;
+		width: 30%;
+		margin-right: 35%;
+		margin-left: 35%;
+		height: auto;
+		text-transform: uppercase;
+		font-family: Helvetica Neue;
+		margin-top: 30vw;
+		line-height: 5vw;
+	}
+	.perubahan-laporan-keuangan img{
+		width: 30%;
+		border-radius: 15px;
+		display: block;
+	}
+	img.formal{
+		position: absolute;
+		right: -5vw;
+		margin-top: 23vw;
+		box-shadow: -10px 0px 25px rgba(0, 0, 0, 0.15);
+	}
+	.shape-left{
+		left: -35vw;
+		margin-top: 10px;
+		position: absolute;
+		width: 50vw;
+		height: 50vw;
+		border-radius: 20px;
+		background: linear-gradient(250deg ,#FF75A0, #B98394);
+		transform: rotate(45deg);
+
+	}
+	.shape-right{
+		right: -45vw;
+		margin-top: 13vw;
+		position: absolute;
+		width: 60vw;
+		height: 60vw;
+		border-radius: 20px;
+		background: linear-gradient(80deg ,#FCE38A, #E0BC3C);
+		transform: rotate(45deg);
+
+	}
+
+	img.sederhana{
+		position: absolute;
+		left: -5vw;
+		margin-top: 10vw;
+		box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.15);
+	}
+/*-- bagian awal pricing table --*/
+	.pricing-table{
+		position: relative;
+		width: 100%;
+		height: 600px;
+		margin-top: 50px;
+		font-family: Helvetica Neue;
+	}
+	.title-price{
+		margin-top: 100px;
+		font-family: Helvetica Neue;
+		width: 100%;
+		height: 5vw;
+	}
+	.header{
+		width: 100%;
+		height: 120px;
+	}
+	.header h2{
+		margin-bottom: 10px;
+		margin-top: 20px;
+
+	}
+	.header p{
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.columns{
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		text-align: center;
+		width: 25%;
+		height: 550px;
+		background: white;
+		display: inline-block;
+		float: left;
+		border-radius: 20px;
+		margin-top: 40px;
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	}
+	.columns:hover{
+		-webkit-transition: 0.3s;
+		transition: 0.3s;
+		transform: scale(1.1);
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+	}
+	span.ceklis{
+		margin-right: 10px;
+	}
+	.fitur {
+		width: 100%;
+		height: 250px;
+		margin-top: 30px;
+	}
+	.fitur p{
+		margin-top: 10px;
+		text-align: left;
+		margin-left: 30px;
+	}
+	.kiri{
+		margin-left: 7.5%;
+		background: white;
+	}
+	.kanan{
+		margin-right: 7.5%;
+		background: white;
+	}
+	.tengah{
+		margin-right: 5%;
+		margin-left: 5%;
+		background: white;
+	}
+	.ceklis {
+		color: #68EAD4;
+	}
+	a.button{
+		padding: 10px 30px;
+		font-size: 18px;
+		text-decoration: none;
+		color: white;
+		background: #68EAD4;
+		border-radius: 10px;
+		font-weight: bold;
+	}
+	.footer{
+		padding-top: 100px;
+		padding-bottom: 50px;
+		font-size: 18px;
+		text-align:center;
+		width: 100%;
+		font-family: Helvetica Neue;
+		font-size: 18px;
+	}
+	.footer span{
+		line-height: 20px;
+	}
+}
+/*-- bagian akhir tampilan tab dan desktop mode --*/
+/*-- ---------------------------------------------- --*/
+/*-- bagian awal tampilan mobile phone --*/
+@media only screen and (max-width: 700px){
+	.logo img{
+		margin-top: 15px;
+		width: 120px;
+		float: left;
+	}
+	#slideNav{
+		transition: 0.7s;
+	}
+	.nav-device{
+		position: fixed;
+		background: white;
+		width: 100%;
+		height: 60px;
+		z-index: 9;
+		box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+	}
+	img.open-nav{
+		color: pink;
+		float: right;
+		position: relative;
+		display: block;
+		margin-top: 20px;
+		z-index: 9;
+		margin-left: 30px;
+	}
+
+	.sign-device-2{
+		margin-top: 100vw;
+		position: absolute;
+		width: 90%;
+	}
+	.sign-device-2 ul{
+		text-align: center;
+		width: 60%;
+		margin-left: 20%;
+		margin-right: 20%;
+		height: 50px;
+		background: white;
+	}
+	.sign-device-2 li{
+		font-size: 5vw;
+		margin-top: 40px;
+		display: block;
+		text-align: center;
+	}
+	.sign-device-2 li a{
+		display: block;
+		padding: 3vw 10vw;
+		font-family: Helvetica Neue;
+		text-decoration: none;
+		color: black;
+		border-radius: 10px;
+		margin-top: 10px;
+
+	}
+
+	.slide-nav .text-menu{
+		position: absolute;
+		margin-top: 20vw;
+	}
+	.text-menu li{
+		display: block;
+		margin-top: 10vw;
+	}
+	.text-menu a{
+		font-size: 4vw;
+		font-family: Helvetica Neue;
+		margin-top: 5vw;
+		text-decoration: none;
+		text-transform: capitalize;
+		color: black;
+	}
+	.active-box-2 a{
+		background: #FCE38A;
+		font-weight: bold;
+
+	}
+	.active-box-3 a{
+		background: white;
+		border: 2px solid #68EAD4;
+	}
+
+	/*-- bagian jumbotron --*/
+	.background img{
+		display: none;
+	}
+	.ilustrasi img{
+		margin-top: 90vw;
+		width: 100%;
+		position: relative;
+	}
+	.title{
+		margin-top: 30px;
+		text-align: center;
+		width: 90%;
+		position: absolute;
+	}
+	.sign-device{
+		display:  none;
+	}
+	.isi-jumbotron{
+		position: absolute;
+		width: 100%;
+		height: 180vw;
+		top: 80px;
+	}
+	.background-mobile{
+		overflow: hidden;
+	}
+	.background-mobile img{
+		display: none;
+		width: 110%;
+		margin-left: -10px;
+		margin-top: 45px;
+	}
+	.ilustrasi img{
+		position: absolute;
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.background{
+		overflow: hidden;
+	}
+	.title h3{
+		font-size: 4vw;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		margin-bottom: 1.5vw;
+		color: #FF75A0;
+	}
+	.title h1{
+		font-size: 7.8vw;
+		font-family: Helvetica Neue;
+		font-weight: bold;
+		margin-bottom: 3vw;
+		line-height: 12vw;
+		margin-right: 
+	}
+	.title p{
+		text-align: center;
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		font-size: 3.5vw;
+		font-family: Helvetica Neue;
+		line-height: 7.5vw;
+		margin-bottom: 6vw;
+	}
+	a.get-started{
+		font-size: 3vw;
+		text-align: center;
+		padding: 10px 15px;
+		border: 2px solid #68EAD4;
+		background: white;
+		border-radius: 10px;
+		text-decoration: none;
+		color: black;
+		font-family: Helvetica Neue;
+		margin-right: 1.5vw;
+	}
+	a.contact-us{
+		font-size: 3vw;
+		text-align: center;
+		padding: 10px 15px;
+		background: #FCE38A;
+		border-radius: 10px;
+		text-decoration: none;
+		color: black;
+		font-family: Helvetica Neue;
+	}
+
+/*-- bagian awal laporuns --*/
+
+	.laporuns{
+		height: auto !important;
+		margin-top: 5vw;
+	}
+	.laporuns .title{
+		margin-top: 10vw;
+	}
+	.laporuns .title h2{
+		margin-top: 1vw;
+	}
+	.laporuns .title p{
+		font-size: 3.5vw;
+	}
+	.laporuns li, .laporuns li.proses{
+		width: 80%;
+		margin-top: 1vw;
+		margin-right: 10%;
+		margin-left: 10%;
+
+	}
+	.laporuns li p{
+		font-size: 3vw;
+		line-height: 5vw;
+	}
+	.laporuns li.upload{
+		margin-top: 40vw;
+	}
+	.laporuns  li h3{
+		font-size: 5vw;
+	}
+	.laporuns .title h2{
+		font-size: 7vw;
+	}
+	.laporuns li{
+		height: 250px;
+		margin-bottom: 20px;
+	}
+	/*-- bagian awal perubahan laporan keuangan --*/
+	.perubahan-laporan-keuangan{
+		position: relative;
+		width: 100%;
+		height: 160vw;
+		overflow: hidden;
+		margin-top: 190vw;
+	}
+	.text-perubahan{
+		font-size: 4vw;
+		position: absolute;
+		text-align: center;
+		width: 60%;
+		margin-right: 15%;
+		margin-left: 15%;
+		height: auto;
+		text-transform: uppercase;
+		font-family: Helvetica Neue;
+		margin-top: 70vw;
+		line-height: 10vw;
+		transform: rotate(-45deg);
+
+
+	}
+	.perubahan-laporan-keuangan img{
+		width: 40%;
+		border-radius: 5px;
+		display: block;
+	}
+	img.formal{
+		position: absolute;
+		right: -5vw;
+		margin-top: 75vw;
+		box-shadow: -10px 0px 25px rgba(0, 0, 0, 0.15);
+	}
+	.shape-left{
+		left: -45vw;
+		margin-top: 15vw;
+		position: absolute;
+		width: 75vw;
+		height: 75vw;
+		border-radius: 20px;
+		background: linear-gradient(230deg ,#FF75A0, #B98394);
+		transform: rotate(45deg);
+
+	}
+	.shape-right{
+		right: -45vw;
+		margin-top: 65vw;
+		position: absolute;
+		width: 80vw;
+		height: 80vw;
+		border-radius: 20px;
+		background: linear-gradient(80deg ,#FCE38A, #E0BC3C);
+		transform: rotate(45deg);
+
+	}
+
+	img.sederhana{
+		position: absolute;
+		left: -5vw;
+		margin-top: 15vw;
+		box-shadow: 10px 0px 25px rgba(0, 0, 0, 0.15);
+	}
+	.title-price{
+		margin-top: 70px;
+		margin-bottom: 50px;
+		font-family: Helvetica Neue;
+	}
+	.title-price h2{
+		font-size: 20px;
+	}
+	.title-price p{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		font-size: 3.5vw;
+		margin-top: 10px;
+		opacity: 0.6;
+	}
+	#price{
+		overflow-x:scroll;
+		height: 700px;
+		scroll-behavior: smooth;
+	}
+	.pricing-table{
+		margin-top: 10px;
+		position: relative;
+		height: auto;
+		width: 780px;
+		float: left;
+	}
+	.header{
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+	}
+	.header p{
+		font-size: 10px;
+	}
+	.grey p{
+		font-size: 10px;
+	}
+	.grey span{
+		font-size: 15px;
+	}
+	.columns{
+		width: 220px;
+		height: 500px;
+	}
+	.columns:hover{
+		transform: scale(1.1);
+	}
+	.kiri{
+		margin-left: 30px;
+	}
+	.tengah{
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	.kanan{
+		margin-right: 30px;
+	} 
+	.fitur p{
+		font-size: 14px;
+	}
+	.fitur{
+		height: 220px;
+	}
+/*-- bagian footer --*/
+	.footer{
+		padding-top: 5px;
+		margin-top: 10px;
+		background: white;
+		font-size: 14px;
+	}
+}
+/*-- bagian akhir tampilan mobile phone --*/
+
+

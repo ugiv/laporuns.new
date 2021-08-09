@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="dashboard laporan.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="nav-device">
+		<div class="back-button">
+			<i class="fas fa-arrow-left" onclick="history.back()"></i>
+		</div>
+		<img class="openNav" onclick="openNav()" src="https://img.icons8.com/material-two-tone/24/000000/menu--v3.png"/>
+	</div>
+	<div id="slideNav" class="slide-nav">
+		<a href="javascript:void(0);" class="closenav"  onclick="closeNav()"><img src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"/></a>
+		<div class="logo">
+			<a href="laporuns.com"><img src="image/logo.png"></a>
+		</div>
+		<ul class="icon atas">
+					<li>
+						<a class="active" href="#"><span class="active">Annual Overview</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Jurnal Umum</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Arus Kas</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Laba Rugi</span></a>
+					</li>
+				</ul>
+				<ul class="icon">
+					<li>
+						<a href="#"><span>Jurnal Pembelian</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Jurnal Penjualan</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Jurnal biaya</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Product</span></a>
+					</li>
+				</ul>
+				<ul class="icon bawah">
+					<li>
+						<a href="#"><span>Database Kontak</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Pelanggan</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Supplier</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Pekerja</span></a>
+					</li>
+				</ul>
+	</div>
+	<nav>
+		<div class="hide-nav-button" style="display: none;">
+			<img src="https://img.icons8.com/metro/26/000000/back.png"/>
+		</div>
+		<div class="back-button">
+			<i class="fas fa-arrow-left" onclick="history.back()"></i>
+		</div>
+		<div class="logo">
+			<a href="laporuns.com"><img src="image/logo.png"></a>
+		</div>
+		<div class="text-navigasi">
+			<ul class="icon">
+					<li>
+						<a class="active" href="#"><span class="active">Annual Overview</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Jurnal Umum</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Arus Kas</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Laba Rugi</span></a>
+					</li>
+				</ul>
+				<ul class="icon">
+					<li>
+						<a href="#"><span>Jurnal Pembelian</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Jurnal Penjualan</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Jurnal biaya</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Product</span></a>
+					</li>
+				</ul>
+				<ul class="icon bawah">
+					<li>
+						<a href="#"><span>Database Kontak</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Pelanggan</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Supplier</span></a>
+					</li>
+					<li>
+						<a href="#"><span>Database Pekerja</span></a>
+					</li>
+				</ul>
+			
+		</div>
+	</nav>
+	<main id="main">
+		<div class="header-dashboard">
+			<div class="profile-picture">
+				<div class="picture">
+					<img src="image/ugi.jpg">
+				</div>	
+				<div class="name">
+					<h4>Ugi Valentino</h4>
+				</div>		
+		</div>
+			<h3 class="title">NIRMA.ID</h3>
+		</div>
+		<div class="spreadsheet">
+			<iframe class="sheet-1" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyMfTsCRU33wm-mJq1DpcpVvkQQOBGfo-_KnI4iYPxu_IpTdIpCP4X2_Cv5hWjS7fWVjpMkJfKOzdv/pubhtml?gid=77366390&amp;single=true&amp;widget=false&amp;headers=false&amp;chrome=false" width="100%" height="1000px"></iframe>
+			<iframe class="sheet-2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRyMfTsCRU33wm-mJq1DpcpVvkQQOBGfo-_KnI4iYPxu_IpTdIpCP4X2_Cv5hWjS7fWVjpMkJfKOzdv/pubhtml?gid=1960895995&amp;single=false&amp;widget=false&amp;headers=false&amp;chrome=false" width="100%px" height="1000px"></iframe>
+		</div>
+
+	</main>
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById("slideNav").style.display = "block";
+	}
+	function closeNav() {
+		document.getElementById("slideNav").style.display = "none";
+	}
+</script>
+</body>
+</html>

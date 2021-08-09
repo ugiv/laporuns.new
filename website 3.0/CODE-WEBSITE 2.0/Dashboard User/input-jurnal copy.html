@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Transaksi</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style-input-jurnal.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+	<div class="logo">
+		<img src="image/logo.png">
+	</div>
+	<div class="back-button">
+		<i class="fas fa-arrow-left" onclick="history.back()"></i>
+	</div>
+	<main>
+		<div class="tittle">
+			<h1>Silakan Input Transaksi Anda</h1>
+		</div>
+		<form id="form" action="/php" method="get" autocomplete="off">
+			<ul>
+				<li class="date-section">
+					<label class="date-t">Tanggal Transaksi</label><br>
+					<input id="date" type="date" name="tanggal">
+				</li>
+				<section>
+				<div id="dinamis-form">
+					<ul>
+						<div class="input-transaksi name-top">
+							<li class="akun">Akun</li>
+							<li class="masuk">Debit</li>
+							<li class="keluar">Credit</li>
+						</div>
+					</ul>
+					<li class="input-transaksi" id="input-1">
+						<input id="transksi-1" type="text" name="text"placeholder="Deskripsi" required>
+						<input class="enter" id="debit1" type="text" name="number" onchange="count()" style="text-align: right;" placeholder="Rp 0.00" required>
+						<input id="credit1" type="text" name="text" placeholder="Rp 0,00" style="text-align: right;" onchange="count()" required>
+					</li>
+					<li class="input-transaksi" id="input-1">
+						<input id="transksi-1" type="text" name="text" placeholder="Deskripsi" required>
+						<input class="masuk" id="debit2" type="number" name="text" placeholder="Rp 0,00" style="text-align: right;" onchange="count()" required>
+						<input id="credit2" type="text" name="text" placeholder="Rp 0,00" style="text-align: right;" onchange="count()" required>
+					</li>
+					<li class="input-transaksi input2" id="input-2" style="display: none;">
+						<input id="transksi-1" type="text" name="text" onfocus="this.value='' " placeholder="Deskripsi" required>
+						<input id="debit3" type="text" name="text" onchange="count()" placeholder="Rp 0,00" style="text-align: right;" required>
+						<input id="credit3" type="text" name="text" onchange="count()" placeholder="Rp 0,00" style="text-align: right;" required>
+					</li>
+				</div>
+					<li id="result">
+						<div class="input-transaksi hasil">
+							<input id="notiF" class="notifikasi" type="text" style="background: white; color: red; font-weight: bold;" >
+							<input class="hasil-d" id="result-debit" type="text" name="jumlah-masuk" style="text-align: right;" readonly>
+							<input class="hasil-c" id="result-credit" type="text" name="jumlah-kelur" style="text-align: right;" readonly>
+						</div>
+					</li>
+				</section>
+				<div class="button">
+					<a href="javascript:void(0)" class="add-input" id="addInput" onclick="addInput()">Tambah</a>
+					<a href="javascript:void(0)" class="remove-input" id="removeInput" onclick="removeInput()">Hapus</a>
+				</div>
+				<div class="upload-button">
+					<input id="upload" type="submit" name="upload" value="Upload">
+				</div>
+			</ul>
+		</form>
+	</main>
+<script type="text/javascript">
+
+     function count(){
+    	var x = document.getElementsByClassName('enter')[0];
+    	var y = x*1;
+    	document.getElementById('result-debit').value = x;
+    }
+	function addInput(){
+		var elmnt = document.getElementsByClassName("input-transaksi")[1];
+		var cln = elmnt.cloneNode(true);
+		document.getElementById('dinamis-form').appendChild(cln);
+	}
+	function removeInput(){
+		document.getElements("input-2").style.display = "none";
+	}
+</script>
+
+
+
+
+
+
+</body>
+</html>

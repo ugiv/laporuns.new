@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style-link-laporan.css">
+	<link rel="icon" href="image/favicon.ico">
+	<script src="https://kit.fontawesome.com/dbadae2875.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<nav>
+		<img class="logo" src="image/logo.png">
+		<div class="back-button">
+			<i class="fas fa-arrow-left" onclick="history.back()"></i>
+		</div>
+	</nav>
+	<main>
+		<div class="tittle">
+			<h1>Form Pengisian Link Laporan</h1>
+		</div>
+		<form action="/php" method="get">
+			<label for="klien">Nama Klien</label><br>
+			<input list="nama-klien" id="klien" name="pilihan-nama" required>
+			<datalist id="nama-klien">
+			    <option value="David"></option>
+			    <option value="Rizky"></option>
+			    <option value="Aulia"></option>
+			    <option value="Zulya"></option>
+			</datalist>
+			<label for="paket-laporan">Paket Laporan</label><br>
+			<input list="pilihan-paket" id="paket-laporan" name="pilihan-paket" required>
+			<datalist id="pilihan-paket">
+			    <option onclick="basicFunction()" id="basic-choose" value="Basic">
+			    <option onchange="intermedietFuction()" id="intermediet-choose" value="Intermediet">
+			    <option onchange="proFunction()" id="pro-choose" value="Pro">
+			</datalist>
+			<section id="basicPaket" class="basic">
+				<label for="annual-overview">Annual Overview</label><br>
+				<input id="annual-overview" type="text"><br>
+				<label for="jurnal-umum">Jurnal Umum</label><br>
+				<input id="jurnal-umum" type="text"><br>
+				<label for="arus-kas">Arus Kas</label><br>
+				<input id="arus-kas" type="text"><br>
+				<label for="laba-rugi">Laba Rugi</label><br>
+				<input id="laba-rugi" type="text"><br>
+				<label for="database-akun">Database Akun</label><br>
+				<input id="database-akun" type="text"><br>
+			</section><section id="intermedietPaket" class="intermediet">
+				<label for="jurnal-pembelian">Jurnal Pembelian</label><br>
+				<input id="jurnal-pembelian" type="text"><br>
+				<label for="jurnal-penjualan">Jurnal Penjualan</label><br>
+				<input id="jurnal-penjualan" type="text"><br>
+				<label for="jurnal-biaya">Jurnal Biaya</label><br>
+				<input id="jurnal-biaya" type="text"><br>
+				<label for="database-produk">Database Produk</label><br>
+				<input id="database-produk" type="text"><br>
+				<label for="database-kontak">Database Kontak</label><br>
+				<input id="database-kontak" type="text"><br>
+			</section><section id="proPaket" class="pro">
+				<label for="database-produk">Database Pelanggan</label><br>
+				<input id="database-produk" type="text"><br>
+				<label for="database-supplier">Database Supplier</label><br>
+				<input id="database-supplier" type="text"><br>
+				<label for="database-pekerja">Database Pekerja</label><br>
+				<input id="database-pekerja" type="text"><br>
+			</section>
+			<input id="submit" class="submit" type="submit" value="kirim">
+		</form>
+	</main>
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById("pro-choose").style.display = "none";
+	}
+	function closeNav() {
+		document.getElementById("slideNav").style.width = "0";
+	}
+	function basicFunction(){
+		document.getElementById("intermedietPaket").style.display = none;
+	}
+</script>
+</body>
+</html>
